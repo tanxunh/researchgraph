@@ -1,0 +1,21 @@
+﻿# Paper A: Atlas Retriever Study
+
+## a1_scope
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_atlas; SECTION_KEY=a1_scope]
+Paper Atlas Trial introduces AtlasRetriever as a method for Literature Mapping. AtlasRetriever TARGETS Literature Mapping because it links claims, study notes, and paper summaries into one navigable search space.
+
+## a2_dataset
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_atlas; SECTION_KEY=a2_dataset]
+AtlasRetriever is EVALUATED_ON AuroraSet. AuroraSet is a Dataset of short artificial abstracts written only for the hard retrieval fixture.
+
+## a3_metric
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_atlas; SECTION_KEY=a3_metric]
+AtlasRetriever REPORTS Source Hit Rate as the main Metric. The reported signal checks whether at least one cited evidence chunk appears in the answer sources.
+
+## a4_concept
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_atlas; SECTION_KEY=a4_concept]
+AtlasRetriever USES Graph Expansion. Graph Expansion is a Concept where entities found in seed chunks expand retrieval toward relation evidence in neighboring chunks.
+
+## a5_compare
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_atlas; SECTION_KEY=a5_compare]
+Paper Atlas Trial COMPARES_WITH BeaconPlanner. The comparison notes that AtlasRetriever retrieves evidence while BeaconPlanner turns recovered evidence into staged tasks.

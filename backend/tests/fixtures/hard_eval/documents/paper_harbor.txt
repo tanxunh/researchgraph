@@ -1,0 +1,21 @@
+﻿# Paper H: Harbor QA Sheet
+
+## h1_scope
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_harbor; SECTION_KEY=h1_scope]
+Paper Harbor Sheet USES HarborQA. HarborQA TARGETS Dataset Grounding by requiring every answer to cite retrieved chunks.
+
+## h2_dataset
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_harbor; SECTION_KEY=h2_dataset]
+HarborQA is EVALUATED_ON AuroraSet. This creates a cross-document bridge because AtlasRetriever is also evaluated on AuroraSet.
+
+## h3_metric
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_harbor; SECTION_KEY=h3_metric]
+HarborQA REPORTS Source Hit Rate. The metric is reused to verify that grounded answers cite at least one source chunk.
+
+## h4_concept
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_harbor; SECTION_KEY=h4_concept]
+HarborQA USES Semantic Drift. Semantic Drift is a Concept describing how paraphrased questions can move away from exact document words.
+
+## h5_compare
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_harbor; SECTION_KEY=h5_compare]
+Paper Harbor Sheet COMPARES_WITH GradientMemo. The comparison contrasts grounded QA with experiment memory recall.

@@ -1,0 +1,488 @@
+{
+  "dataset_id": "agent-eval-pilot-v1",
+  "dataset_version": 1,
+  "source_benchmark": "real-research-pilot-v1",
+  "source_sha256": "7205a8939e399cfc912e6ba52125c49d6a6b08b46b9d1ca468000f229f0f18eb",
+  "gold_source": "HUMAN_CURATED",
+  "task_review_status": "CANDIDATE_REVIEW_PENDING",
+  "semantic_review_status": "SEMANTIC_REVIEW_PENDING",
+  "corpus_papers": 19,
+  "language": "English",
+  "tasks": [
+    {
+      "task_id": "A001",
+      "question": "Synthesize the DROO paper: explain its binary local/offloading action and how recent selected action ranks adapt K to reduce per-frame optimization work.",
+      "task_type": "single_paper",
+      "document_scope": [
+        2
+      ],
+      "required_fields": [
+        "method",
+        "optimization_variables"
+      ],
+      "source_query_ids": [
+        "Q001",
+        "Q030"
+      ],
+      "expected_evidence": [
+        {
+          "benchmark_document_id": "P002",
+          "document_id": 2,
+          "document_version_id": 2,
+          "chunk_id": "doc-2-chunk-e3d0f0b6fb59c0853b27ce17",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P002",
+          "document_id": 2,
+          "document_version_id": 2,
+          "chunk_id": "doc-2-chunk-9a5cec8da48ba0da1584aca5",
+          "page": 7,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P002",
+          "document_id": 2,
+          "document_version_id": 2,
+          "chunk_id": "doc-2-chunk-366aa896a5c364cd39e4d5d4",
+          "page": 7,
+          "section": null
+        }
+      ],
+      "notes": "Candidate composition from approved queries; not human semantically verified. Gold union is diagnostic, not exhaustive field-level support. Missing support must remain explicit."
+    },
+    {
+      "task_id": "A002",
+      "question": "Synthesize the hybrid NOMA/FDMA marine offloading paper: trace data from underwater sensors through aerial links, explain the access method on each link, and the role of secrecy in offloading decisions.",
+      "task_type": "single_paper",
+      "document_scope": [
+        19
+      ],
+      "required_fields": [
+        "system_scenario",
+        "method"
+      ],
+      "source_query_ids": [
+        "Q020",
+        "Q029"
+      ],
+      "expected_evidence": [
+        {
+          "benchmark_document_id": "P019",
+          "document_id": 19,
+          "document_version_id": 19,
+          "chunk_id": "doc-19-chunk-e9d755cb094ccba1fca4c9c4",
+          "page": 3,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P019",
+          "document_id": 19,
+          "document_version_id": 19,
+          "chunk_id": "doc-19-chunk-cc7014b8c4e02d81fee2722d",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P019",
+          "document_id": 19,
+          "document_version_id": 19,
+          "chunk_id": "doc-19-chunk-392da6ee1b91b84671f55316",
+          "page": 3,
+          "section": null
+        }
+      ],
+      "notes": "Candidate composition from approved queries; not human semantically verified. Gold union is diagnostic, not exhaustive field-level support. Missing support must remain explicit."
+    },
+    {
+      "task_id": "A003",
+      "question": "Compare DROO and the latency-constrained wireless-powered MEC design of Feng Wang and colleagues: describe the system roles, local/offloading methods, and optimization objectives.",
+      "task_type": "cross_document",
+      "document_scope": [
+        2,
+        7
+      ],
+      "required_fields": [
+        "system_scenario",
+        "method",
+        "optimization_objective"
+      ],
+      "source_query_ids": [
+        "Q001",
+        "Q002",
+        "Q021"
+      ],
+      "expected_evidence": [
+        {
+          "benchmark_document_id": "P002",
+          "document_id": 2,
+          "document_version_id": 2,
+          "chunk_id": "doc-2-chunk-e3d0f0b6fb59c0853b27ce17",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P007",
+          "document_id": 7,
+          "document_version_id": 7,
+          "chunk_id": "doc-7-chunk-b06267d418a4a07a5d608a7b",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P002",
+          "document_id": 2,
+          "document_version_id": 2,
+          "chunk_id": "doc-2-chunk-3b7bb94ce3708eb321ecb260",
+          "page": 2,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P007",
+          "document_id": 7,
+          "document_version_id": 7,
+          "chunk_id": "doc-7-chunk-0d9edb534aa32393f10a3d3b",
+          "page": 5,
+          "section": null
+        }
+      ],
+      "notes": "Candidate composition from approved queries; not human semantically verified. Gold union is diagnostic, not exhaustive field-level support. Missing support must remain explicit."
+    },
+    {
+      "task_id": "A004",
+      "question": "Compare NOMA-assisted secure marine offloading with online hierarchical marine-IoT offloading: explain PPO and SCA and distinguish which decisions are assigned to learning and optimization.",
+      "task_type": "cross_document",
+      "document_scope": [
+        11,
+        13
+      ],
+      "required_fields": [
+        "method",
+        "optimization_variables"
+      ],
+      "source_query_ids": [
+        "Q009",
+        "Q010",
+        "Q022"
+      ],
+      "expected_evidence": [
+        {
+          "benchmark_document_id": "P011",
+          "document_id": 11,
+          "document_version_id": 11,
+          "chunk_id": "doc-11-chunk-fd000b18ca3142002a64a348",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P013",
+          "document_id": 13,
+          "document_version_id": 13,
+          "chunk_id": "doc-13-chunk-d5e9b8209d4ab9199bc553ee",
+          "page": 2,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P013",
+          "document_id": 13,
+          "document_version_id": 13,
+          "chunk_id": "doc-13-chunk-7fe39f2943b4cb7c4891657c",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "notes": "Candidate composition from approved queries; not human semantically verified. Gold union is diagnostic, not exhaustive field-level support. Missing support must remain explicit."
+    },
+    {
+      "task_id": "A005",
+      "question": "Compare the UAV-assisted maritime and AUV-aided information-collection studies: explain the energy/AoI relationship and how freshness constraints and system decisions enter their designs.",
+      "task_type": "cross_document",
+      "document_scope": [
+        10,
+        17
+      ],
+      "required_fields": [
+        "optimization_objective",
+        "optimization_variables"
+      ],
+      "source_query_ids": [
+        "Q006",
+        "Q019",
+        "Q023"
+      ],
+      "expected_evidence": [
+        {
+          "benchmark_document_id": "P010",
+          "document_id": 10,
+          "document_version_id": 10,
+          "chunk_id": "doc-10-chunk-c6323cb228f78b4b5ed1ea91",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P017",
+          "document_id": 17,
+          "document_version_id": 17,
+          "chunk_id": "doc-17-chunk-f776c4e537bea4f517114309",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "notes": "Candidate composition from approved queries; not human semantically verified. Gold union is diagnostic, not exhaustive field-level support. Missing support must remain explicit."
+    },
+    {
+      "task_id": "A006",
+      "question": "Compare CRA for IEEE 802.11ax and EURA for LTE real-time traffic: describe the traffic scenarios and the information each resource-allocation method uses.",
+      "task_type": "cross_document",
+      "document_scope": [
+        12,
+        16
+      ],
+      "required_fields": [
+        "system_scenario",
+        "method"
+      ],
+      "source_query_ids": [
+        "Q008",
+        "Q015",
+        "Q026"
+      ],
+      "expected_evidence": [
+        {
+          "benchmark_document_id": "P016",
+          "document_id": 16,
+          "document_version_id": 16,
+          "chunk_id": "doc-16-chunk-a62a7e7f47f9c0a298a8cda2",
+          "page": 2,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P012",
+          "document_id": 12,
+          "document_version_id": 12,
+          "chunk_id": "doc-12-chunk-a2957975e5a4b9f1f342968a",
+          "page": 2,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P012",
+          "document_id": 12,
+          "document_version_id": 12,
+          "chunk_id": "doc-12-chunk-2713dc1525875303ef9c1978",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P012",
+          "document_id": 12,
+          "document_version_id": 12,
+          "chunk_id": "doc-12-chunk-e26bd2e8c9faa8e8574b21d1",
+          "page": 2,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P016",
+          "document_id": 16,
+          "document_version_id": 16,
+          "chunk_id": "doc-16-chunk-2e5d9f46dedd8853487b40c7",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "notes": "Candidate composition from approved queries; not human semantically verified. Gold union is diagnostic, not exhaustive field-level support. Missing support must remain explicit."
+    },
+    {
+      "task_id": "A007",
+      "question": "Explain the cost relationships in NOMA-based UAV emergency offloading and multi-tier underwater computing: relate delay and energy to computational overhead, and execution savings and AUV movement cost to profit.",
+      "task_type": "relational",
+      "document_scope": [
+        1,
+        6
+      ],
+      "required_fields": [
+        "optimization_objective"
+      ],
+      "source_query_ids": [
+        "Q016",
+        "Q018"
+      ],
+      "expected_evidence": [
+        {
+          "benchmark_document_id": "P001",
+          "document_id": 1,
+          "document_version_id": 1,
+          "chunk_id": "doc-1-chunk-503afa49c123bb86e47d9bd7",
+          "page": 5,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P006",
+          "document_id": 6,
+          "document_version_id": 6,
+          "chunk_id": "doc-6-chunk-55f4fc35c4dd4581bad0d03f",
+          "page": 8,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P006",
+          "document_id": 6,
+          "document_version_id": 6,
+          "chunk_id": "doc-6-chunk-5c821e5db8dd1edf2074b3eb",
+          "page": 8,
+          "section": null
+        }
+      ],
+      "notes": "Candidate composition from approved queries; not human semantically verified. Gold union is diagnostic, not exhaustive field-level support. Missing support must remain explicit."
+    },
+    {
+      "task_id": "A008",
+      "question": "Relate multiple-access choices to system architecture in the hybrid NOMA-OMA satellite scheme and hybrid NOMA/FDMA marine offloading: distinguish learned mode selection from link-specific access assignments.",
+      "task_type": "relational",
+      "document_scope": [
+        4,
+        19
+      ],
+      "required_fields": [
+        "system_scenario",
+        "method"
+      ],
+      "source_query_ids": [
+        "Q017",
+        "Q020",
+        "Q025"
+      ],
+      "expected_evidence": [
+        {
+          "benchmark_document_id": "P004",
+          "document_id": 4,
+          "document_version_id": 4,
+          "chunk_id": "doc-4-chunk-ff11ce11501889f6865c4246",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P019",
+          "document_id": 19,
+          "document_version_id": 19,
+          "chunk_id": "doc-19-chunk-e9d755cb094ccba1fca4c9c4",
+          "page": 3,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P019",
+          "document_id": 19,
+          "document_version_id": 19,
+          "chunk_id": "doc-19-chunk-cc7014b8c4e02d81fee2722d",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P004",
+          "document_id": 4,
+          "document_version_id": 4,
+          "chunk_id": "doc-4-chunk-5286dc06b77bc7e8c8d5f61d",
+          "page": 2,
+          "section": null
+        }
+      ],
+      "notes": "Candidate composition from approved queries; not human semantically verified. Gold union is diagnostic, not exhaustive field-level support. Missing support must remain explicit."
+    },
+    {
+      "task_id": "A009",
+      "question": "Trace the underwater optical edge-computing design from unstable underwater links through DLS-TOPS and OPD-TO: explain why terrestrial cloud assumptions are unsuitable, how the stages interact, and their distinct objectives.",
+      "task_type": "multi_hop",
+      "document_scope": [
+        3
+      ],
+      "required_fields": [
+        "system_scenario",
+        "method",
+        "optimization_objective"
+      ],
+      "source_query_ids": [
+        "Q011",
+        "Q027"
+      ],
+      "expected_evidence": [
+        {
+          "benchmark_document_id": "P003",
+          "document_id": 3,
+          "document_version_id": 3,
+          "chunk_id": "doc-3-chunk-50c27396e7ecab54a9d160a2",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P003",
+          "document_id": 3,
+          "document_version_id": 3,
+          "chunk_id": "doc-3-chunk-070caec71eb2ddf0ef1db400",
+          "page": 6,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P003",
+          "document_id": 3,
+          "document_version_id": 3,
+          "chunk_id": "doc-3-chunk-3ab4f78dc6136000224c45e5",
+          "page": 6,
+          "section": null
+        }
+      ],
+      "notes": "Candidate composition from approved queries; not human semantically verified. Gold union is diagnostic, not exhaustive field-level support. Missing support must remain explicit."
+    },
+    {
+      "task_id": "A010",
+      "question": "Trace the autonomous underwater glider design from modeled ocean conditions to training inputs and SN-LSTM onboard navigation control; explain why energy constraints motivate the lightweight model.",
+      "task_type": "multi_hop",
+      "document_scope": [
+        5
+      ],
+      "required_fields": [
+        "system_scenario",
+        "method"
+      ],
+      "source_query_ids": [
+        "Q007",
+        "Q012",
+        "Q028"
+      ],
+      "expected_evidence": [
+        {
+          "benchmark_document_id": "P005",
+          "document_id": 5,
+          "document_version_id": 5,
+          "chunk_id": "doc-5-chunk-e3a1f198dc34582c3e596d88",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P005",
+          "document_id": 5,
+          "document_version_id": 5,
+          "chunk_id": "doc-5-chunk-0a7a9aae05524a6d19a559b0",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P005",
+          "document_id": 5,
+          "document_version_id": 5,
+          "chunk_id": "doc-5-chunk-79270ccd0d7f4a4bd60ef9ed",
+          "page": 2,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P005",
+          "document_id": 5,
+          "document_version_id": 5,
+          "chunk_id": "doc-5-chunk-8f597524d11c5c6ee24934d5",
+          "page": 2,
+          "section": null
+        }
+      ],
+      "notes": "Candidate composition from approved queries; not human semantically verified. Gold union is diagnostic, not exhaustive field-level support. Missing support must remain explicit."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+﻿# Paper E: Echo Graph Report
+
+## e1_scope
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_echo; SECTION_KEY=e1_scope]
+Paper Echo Report USES EchoGraph. EchoGraph TARGETS Citation Trace by walking entity relations attached to evidence chunks.
+
+## e2_dataset
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_echo; SECTION_KEY=e2_dataset]
+EchoGraph is EVALUATED_ON ScholarToy. ScholarToy is a Dataset of synthetic papers, methods, datasets, tasks, metrics, and concepts.
+
+## e3_metric
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_echo; SECTION_KEY=e3_metric]
+EchoGraph REPORTS Graph Path Validity. Graph Path Validity is a Metric requiring every returned relation path to reference existing entities and an evidence chunk.
+
+## e4_concept
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_echo; SECTION_KEY=e4_concept]
+EchoGraph USES Graph Expansion. The graph expansion step can recover evidence from a related document when vector search only finds the query entity.
+
+## e5_compare
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_echo; SECTION_KEY=e5_compare]
+Paper Echo Report COMPARES_WITH CascadeReader. EchoGraph exposes paths; CascadeReader uses those paths for multi-source answers.

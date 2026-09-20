@@ -1,0 +1,160 @@
+services:
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Set MYSQL_ROOT_PASSWORD in .env}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-lifeflow_researchgraph}
+      MYSQL_USER: ${MYSQL_USER:-lifeflow}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Set MYSQL_PASSWORD in .env}
+      TZ: UTC
+    ports:
+      - "127.0.0.1:${MYSQL_PUBLISHED_PORT:-3307}:3306"
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]
+    volumes:
+      - lifeflow_researchgraph_mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", 'MYSQL_PWD="$$MYSQL_PASSWORD" mysqladmin ping -h 127.0.0.1 -u"$$MYSQL_USER" --silent']
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  chroma:
+    image: chromadb/chroma:0.5.23
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${CHROMA_PUBLISHED_PORT:-8001}:8000"
+    environment:
+      IS_PERSISTENT: "TRUE"
+      PERSIST_DIRECTORY: /chroma/chroma
+      ANONYMIZED_TELEMETRY: "FALSE"
+    volumes:
+      - lifeflow_researchgraph_chroma:/chroma/chroma
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/v1/heartbeat', timeout=4).read()"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  backend:
+    build:
+      context: ./backend
+      target: runtime
+      args:
+        INSTALL_BGE: "true"
+    image: ${COMPOSE_PROJECT_NAME:-lifeflow-researchgraph}-backend:local
+    restart: unless-stopped
+    env_file: ${RUNTIME_ENV_FILE:-.env}
+    environment:
+      APP_ENV: production
+      DATABASE_URL: mysql+pymysql://${MYSQL_USER:-lifeflow}:${MYSQL_PASSWORD}@${MYSQL_HOST:-mysql}:${MYSQL_PORT:-3306}/${MYSQL_DATABASE:-lifeflow_researchgraph}?charset=utf8mb4
+      CHROMA_HOST: ${CHROMA_HOST:-chroma}
+      CHROMA_PORT: ${CHROMA_PORT:-8000}
+      CHROMA_SSL: "false"
+      SOURCE_STORAGE_ROOT: /app/backend/storage
+      EMBEDDING_CACHE_DIR: /app/backend/data/model_cache
+      HF_HOME: /app/backend/data/huggingface
+      ANONYMIZED_TELEMETRY: "FALSE"
+    volumes:
+      - researchgraph_raw:/app/backend/storage
+      - researchgraph_models:/app/backend/data
+    ports:
+      - "127.0.0.1:${BACKEND_PORT:-8000}:8000"
+    depends_on:
+      mysql:
+        condition: service_healthy
+      chroma:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import json,urllib.request; r=json.load(urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=4)); assert r['code']==0 and r['data']['status']=='ok'"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+
+  backend-tests:
+    profiles: ["test"]
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: test
+    image: lifeflow-researchgraph-tests:dev
+    # No runtime env_file, business database, volume, port or service dependency.
+    environment:
+      PYTHONDONTWRITEBYTECODE: "1"
+      ANONYMIZED_TELEMETRY: "FALSE"
+    command: ["python", "-m", "pytest", "-p", "no:cacheprovider"]
+
+  mysql-consistency:
+    profiles: ["consistency"]
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: isolated_test_root
+      MYSQL_DATABASE: lifeflow_consistency_test
+      MYSQL_USER: consistency
+      MYSQL_PASSWORD: isolated_test_password
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_unicode_ci"]
+    tmpfs:
+      - /var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uconsistency", "-pisolated_test_password"]
+      interval: 3s
+      timeout: 5s
+      retries: 40
+
+  chroma-consistency:
+    profiles: ["consistency"]
+    image: chromadb/chroma:0.5.23
+    environment:
+      IS_PERSISTENT: "TRUE"
+      PERSIST_DIRECTORY: /chroma/chroma
+      ANONYMIZED_TELEMETRY: "FALSE"
+    tmpfs:
+      - /chroma/chroma
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/v1/heartbeat').read()\""]
+      interval: 3s
+      timeout: 5s
+      retries: 40
+
+  backend-consistency-tests:
+    profiles: ["consistency"]
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: test
+    image: lifeflow-researchgraph-tests:dev
+    environment:
+      CONSISTENCY_REAL: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+      ANONYMIZED_TELEMETRY: "FALSE"
+    depends_on:
+      mysql-consistency:
+        condition: service_healthy
+      chroma-consistency:
+        condition: service_healthy
+    command: ["python", "-m", "pytest", "-p", "no:cacheprovider", "tests/integration"]
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-/}
+    image: ${COMPOSE_PROJECT_NAME:-lifeflow-researchgraph}-frontend:local
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${FRONTEND_PORT:-5173}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1/frontend-health"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  lifeflow_researchgraph_mysql_data:
+  lifeflow_researchgraph_chroma:
+  researchgraph_raw:
+  researchgraph_models:

@@ -1,0 +1,772 @@
+{
+  "benchmark_id": "real-research-pilot-v1",
+  "benchmark_version": 1,
+  "corpus": {
+    "paper_count": 19,
+    "source": "19 real papers"
+  },
+  "annotation_source": "HUMAN_CURATED",
+  "query_count": 30,
+  "language": "English",
+  "created_from": "pilot_queries_candidates.json",
+  "candidate_sha256": "9b021be106ddb998ba893ff9b2304fcd6df66cffacf800b2503d80b0b6f26c39",
+  "status": "FINALIZED",
+  "queries": [
+    {
+      "query_id": "Q001",
+      "question": "In the DROO wireless-powered MEC system, can a task be split between local execution and offloading, or is the offloading decision binary?",
+      "query_type": "factual",
+      "language": "en",
+      "gold_document_ids": [
+        "P002"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P002",
+          "document_id": 2,
+          "document_version_id": 2,
+          "chunk_id": "doc-2-chunk-e3d0f0b6fb59c0853b27ce17",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q002",
+      "question": "What two functions are integrated at the multiantenna access point in the wireless-powered MEC system?",
+      "query_type": "factual",
+      "language": "en",
+      "gold_document_ids": [
+        "P007"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P007",
+          "document_id": 7,
+          "document_version_id": 7,
+          "chunk_id": "doc-7-chunk-b06267d418a4a07a5d608a7b",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q003",
+      "question": "Which fading distributions model the underwater acoustic link and the free-space optical link in the relay-aided satellite–underwater system?",
+      "query_type": "factual",
+      "language": "en",
+      "gold_document_ids": [
+        "P014"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P014",
+          "document_id": 14,
+          "document_version_id": 14,
+          "chunk_id": "doc-14-chunk-02fcc435c7f1c8066ad74189",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q004",
+      "question": "What energy-harvesting model is incorporated into the OFDMA-based WPT resource-allocation problem for mobile-edge computing?",
+      "query_type": "factual",
+      "language": "en",
+      "gold_document_ids": [
+        "P009"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P009",
+          "document_id": 9,
+          "document_version_id": 9,
+          "chunk_id": "doc-9-chunk-5af7688fa459838ba9d634db",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q005",
+      "question": "What objective and user requirement guide trajectory and resource optimization in the blockage-aware multi-UAV communication study?",
+      "query_type": "factual",
+      "language": "en",
+      "gold_document_ids": [
+        "P018"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P018",
+          "document_id": 18,
+          "document_version_id": 18,
+          "chunk_id": "doc-18-chunk-56d2ace975ff9dfd4473bc50",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q006",
+      "question": "In the UAV-assisted maritime wireless-powered network study, how does reported energy consumption change when the AoI threshold is tightened?",
+      "query_type": "factual",
+      "language": "en",
+      "gold_document_ids": [
+        "P010"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P010",
+          "document_id": 10,
+          "document_version_id": 10,
+          "chunk_id": "doc-10-chunk-c6323cb228f78b4b5ed1ea91",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q007",
+      "question": "What does SN-LSTM denote in the autonomous underwater glider study?",
+      "query_type": "exact_term",
+      "language": "en",
+      "gold_document_ids": [
+        "P005"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P005",
+          "document_id": 5,
+          "document_version_id": 5,
+          "chunk_id": "doc-5-chunk-e3a1f198dc34582c3e596d88",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q008",
+      "question": "What is the full name of EURA in the LTE real-time traffic resource-allocation study?",
+      "query_type": "exact_term",
+      "language": "en",
+      "gold_document_ids": [
+        "P016"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P016",
+          "document_id": 16,
+          "document_version_id": 16,
+          "chunk_id": "doc-16-chunk-a62a7e7f47f9c0a298a8cda2",
+          "page": 2,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q009",
+      "question": "What does PPO stand for in the NOMA-assisted secure marine computation-offloading algorithm?",
+      "query_type": "exact_term",
+      "language": "en",
+      "gold_document_ids": [
+        "P011"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P011",
+          "document_id": 11,
+          "document_version_id": 11,
+          "chunk_id": "doc-11-chunk-fd000b18ca3142002a64a348",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q010",
+      "question": "What does SCA stand for in the online hierarchical marine-IoT offloading framework?",
+      "query_type": "exact_term",
+      "language": "en",
+      "gold_document_ids": [
+        "P013"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P013",
+          "document_id": 13,
+          "document_version_id": 13,
+          "chunk_id": "doc-13-chunk-d5e9b8209d4ab9199bc553ee",
+          "page": 2,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q011",
+      "question": "Why can cloud-computing approaches designed for stable terrestrial networks be a poor fit for underwater optical sensor networks?",
+      "query_type": "semantic",
+      "language": "en",
+      "gold_document_ids": [
+        "P003"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P003",
+          "document_id": 3,
+          "document_version_id": 3,
+          "chunk_id": "doc-3-chunk-50c27396e7ecab54a9d160a2",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q012",
+      "question": "Why is a lightweight onboard model useful for autonomous underwater glider navigation when energy is limited?",
+      "query_type": "semantic",
+      "language": "en",
+      "gold_document_ids": [
+        "P005"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P005",
+          "document_id": 5,
+          "document_version_id": 5,
+          "chunk_id": "doc-5-chunk-0a7a9aae05524a6d19a559b0",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q013",
+      "question": "Why should a cellular UAV downlink allocation scheme account for interfering base stations instead of considering only the serving link?",
+      "query_type": "semantic",
+      "language": "en",
+      "gold_document_ids": [
+        "P008"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P008",
+          "document_id": 8,
+          "document_version_id": 8,
+          "chunk_id": "doc-8-chunk-ba8e82b0cd6892f061f6bc9d",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q014",
+      "question": "How can environmental sensing help an underwater acoustic network share spectrum without causing avoidable interference?",
+      "query_type": "semantic",
+      "language": "en",
+      "gold_document_ids": [
+        "P015"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P015",
+          "document_id": 15,
+          "document_version_id": 15,
+          "chunk_id": "doc-15-chunk-d74bf59148168176393f6a63",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q015",
+      "question": "What traffic setting does the IEEE 802.11ax study consider, and what resource-allocation approach is proposed to satisfy real-time application requirements?",
+      "query_type": "semantic",
+      "language": "en",
+      "gold_document_ids": [
+        "P012"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P012",
+          "document_id": 12,
+          "document_version_id": 12,
+          "chunk_id": "doc-12-chunk-a2957975e5a4b9f1f342968a",
+          "page": 2,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P012",
+          "document_id": 12,
+          "document_version_id": 12,
+          "chunk_id": "doc-12-chunk-2713dc1525875303ef9c1978",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q016",
+      "question": "How are execution delay and energy consumption combined in the computational-overhead objective for NOMA-based UAV emergency offloading?",
+      "query_type": "relational",
+      "language": "en",
+      "gold_document_ids": [
+        "P001"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P001",
+          "document_id": 1,
+          "document_version_id": 1,
+          "chunk_id": "doc-1-chunk-503afa49c123bb86e47d9bd7",
+          "page": 5,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q017",
+      "question": "What role does the deep neural network play in deciding whether satellite-network users should operate in NOMA mode?",
+      "query_type": "relational",
+      "language": "en",
+      "gold_document_ids": [
+        "P004"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P004",
+          "document_id": 4,
+          "document_version_id": 4,
+          "chunk_id": "doc-4-chunk-ff11ce11501889f6865c4246",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q018",
+      "question": "How does the multi-tier underwater computing framework relate task-execution savings and AUV movement costs to its profit objective?",
+      "query_type": "relational",
+      "language": "en",
+      "gold_document_ids": [
+        "P006"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P006",
+          "document_id": 6,
+          "document_version_id": 6,
+          "chunk_id": "doc-6-chunk-55f4fc35c4dd4581bad0d03f",
+          "page": 8,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P006",
+          "document_id": 6,
+          "document_version_id": 6,
+          "chunk_id": "doc-6-chunk-5c821e5db8dd1edf2074b3eb",
+          "page": 8,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q019",
+      "question": "Which system decisions and information-freshness considerations are coupled to energy efficiency in the AUV-aided information-collection study?",
+      "query_type": "relational",
+      "language": "en",
+      "gold_document_ids": [
+        "P017"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P017",
+          "document_id": 17,
+          "document_version_id": 17,
+          "chunk_id": "doc-17-chunk-f776c4e537bea4f517114309",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q020",
+      "question": "How does the hybrid NOMA/FDMA marine offloading architecture assign different access methods to its underwater and aerial links?",
+      "query_type": "relational",
+      "language": "en",
+      "gold_document_ids": [
+        "P019"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P019",
+          "document_id": 19,
+          "document_version_id": 19,
+          "chunk_id": "doc-19-chunk-e9d755cb094ccba1fca4c9c4",
+          "page": 3,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P019",
+          "document_id": 19,
+          "document_version_id": 19,
+          "chunk_id": "doc-19-chunk-cc7014b8c4e02d81fee2722d",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q021",
+      "question": "How do the optimization objectives differ between DROO and the latency-constrained joint offloading/computing design of Feng Wang and colleagues?",
+      "query_type": "cross_document",
+      "language": "en",
+      "gold_document_ids": [
+        "P002",
+        "P007"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P002",
+          "document_id": 2,
+          "document_version_id": 2,
+          "chunk_id": "doc-2-chunk-3b7bb94ce3708eb321ecb260",
+          "page": 2,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P007",
+          "document_id": 7,
+          "document_version_id": 7,
+          "chunk_id": "doc-7-chunk-0d9edb534aa32393f10a3d3b",
+          "page": 5,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q022",
+      "question": "How do the decisions assigned to the learning component differ between NOMA-assisted secure marine offloading and online hierarchical marine-IoT offloading?",
+      "query_type": "cross_document",
+      "language": "en",
+      "gold_document_ids": [
+        "P011",
+        "P013"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P011",
+          "document_id": 11,
+          "document_version_id": 11,
+          "chunk_id": "doc-11-chunk-fd000b18ca3142002a64a348",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P013",
+          "document_id": 13,
+          "document_version_id": 13,
+          "chunk_id": "doc-13-chunk-7fe39f2943b4cb7c4891657c",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q023",
+      "question": "How does tightening the AoI requirement affect energy consumption in the UAV-assisted maritime study, and how is AoI incorporated into the energy-efficient AUV-aided information-collection study?",
+      "query_type": "cross_document",
+      "language": "en",
+      "gold_document_ids": [
+        "P010",
+        "P017"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P010",
+          "document_id": 10,
+          "document_version_id": 10,
+          "chunk_id": "doc-10-chunk-c6323cb228f78b4b5ed1ea91",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P017",
+          "document_id": 17,
+          "document_version_id": 17,
+          "chunk_id": "doc-17-chunk-f776c4e537bea4f517114309",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q024",
+      "question": "What performance quantities are targeted in the underwater optical edge-computing study versus analyzed in the relay-aided satellite–underwater acoustic communication study?",
+      "query_type": "cross_document",
+      "language": "en",
+      "gold_document_ids": [
+        "P003",
+        "P014"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P003",
+          "document_id": 3,
+          "document_version_id": 3,
+          "chunk_id": "doc-3-chunk-8d35a8bd5844984274d16d30",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P014",
+          "document_id": 14,
+          "document_version_id": 14,
+          "chunk_id": "doc-14-chunk-befb71f14e4dffcd630f7cd0",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q025",
+      "question": "How does the use of multiple-access alternatives differ between the hybrid NOMA-OMA satellite scheme and the hybrid NOMA/FDMA marine offloading architecture?",
+      "query_type": "cross_document",
+      "language": "en",
+      "gold_document_ids": [
+        "P004",
+        "P019"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P004",
+          "document_id": 4,
+          "document_version_id": 4,
+          "chunk_id": "doc-4-chunk-5286dc06b77bc7e8c8d5f61d",
+          "page": 2,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P019",
+          "document_id": 19,
+          "document_version_id": 19,
+          "chunk_id": "doc-19-chunk-e9d755cb094ccba1fca4c9c4",
+          "page": 3,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P019",
+          "document_id": 19,
+          "document_version_id": 19,
+          "chunk_id": "doc-19-chunk-cc7014b8c4e02d81fee2722d",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q026",
+      "question": "What information drives resource allocation in CRA for IEEE 802.11ax versus EURA for LTE real-time traffic?",
+      "query_type": "cross_document",
+      "language": "en",
+      "gold_document_ids": [
+        "P012",
+        "P016"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P012",
+          "document_id": 12,
+          "document_version_id": 12,
+          "chunk_id": "doc-12-chunk-e26bd2e8c9faa8e8574b21d1",
+          "page": 2,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P016",
+          "document_id": 16,
+          "document_version_id": 16,
+          "chunk_id": "doc-16-chunk-2e5d9f46dedd8853487b40c7",
+          "page": 1,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q027",
+      "question": "How do DLS-TOPS and OPD-TO work together to adapt task offloading to changing underwater links, and what different optimization objectives do the two stages serve?",
+      "query_type": "multi_hop",
+      "language": "en",
+      "gold_document_ids": [
+        "P003"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P003",
+          "document_id": 3,
+          "document_version_id": 3,
+          "chunk_id": "doc-3-chunk-070caec71eb2ddf0ef1db400",
+          "page": 6,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P003",
+          "document_id": 3,
+          "document_version_id": 3,
+          "chunk_id": "doc-3-chunk-3ab4f78dc6136000224c45e5",
+          "page": 6,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q028",
+      "question": "How does the autonomous glider study connect modeled ocean conditions to training inputs and ultimately onboard navigation control?",
+      "query_type": "multi_hop",
+      "language": "en",
+      "gold_document_ids": [
+        "P005"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P005",
+          "document_id": 5,
+          "document_version_id": 5,
+          "chunk_id": "doc-5-chunk-79270ccd0d7f4a4bd60ef9ed",
+          "page": 2,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P005",
+          "document_id": 5,
+          "document_version_id": 5,
+          "chunk_id": "doc-5-chunk-8f597524d11c5c6ee24934d5",
+          "page": 2,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q029",
+      "question": "Starting with data at underwater sensors, how is workload forwarded through the hybrid marine offloading system, and why must the final offloading decision also account for secrecy?",
+      "query_type": "multi_hop",
+      "language": "en",
+      "gold_document_ids": [
+        "P019"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P019",
+          "document_id": 19,
+          "document_version_id": 19,
+          "chunk_id": "doc-19-chunk-e9d755cb094ccba1fca4c9c4",
+          "page": 3,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P019",
+          "document_id": 19,
+          "document_version_id": 19,
+          "chunk_id": "doc-19-chunk-cc7014b8c4e02d81fee2722d",
+          "page": 1,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P019",
+          "document_id": 19,
+          "document_version_id": 19,
+          "chunk_id": "doc-19-chunk-392da6ee1b91b84671f55316",
+          "page": 3,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    },
+    {
+      "query_id": "Q030",
+      "question": "How does DROO use recently selected action ranks to adapt K and thereby reduce future per-frame optimization work?",
+      "query_type": "multi_hop",
+      "language": "en",
+      "gold_document_ids": [
+        "P002"
+      ],
+      "gold_evidence": [
+        {
+          "benchmark_document_id": "P002",
+          "document_id": 2,
+          "document_version_id": 2,
+          "chunk_id": "doc-2-chunk-9a5cec8da48ba0da1584aca5",
+          "page": 7,
+          "section": null
+        },
+        {
+          "benchmark_document_id": "P002",
+          "document_id": 2,
+          "document_version_id": 2,
+          "chunk_id": "doc-2-chunk-366aa896a5c364cd39e4d5d4",
+          "page": 7,
+          "section": null
+        }
+      ],
+      "annotation_status": "HUMAN_APPROVED",
+      "annotator": "human-reviewed"
+    }
+  ]
+}

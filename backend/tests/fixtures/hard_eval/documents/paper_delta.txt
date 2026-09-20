@@ -1,0 +1,21 @@
+﻿# Paper D: Delta Indexer Memo
+
+## d1_scope
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_delta; SECTION_KEY=d1_scope]
+Paper Delta Memo USES DeltaIndexer. DeltaIndexer TARGETS Incremental Note Search by detecting changed sections and preserving stable chunks when content is unchanged.
+
+## d2_dataset
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_delta; SECTION_KEY=d2_dataset]
+DeltaIndexer is EVALUATED_ON LabNotes-42. LabNotes-42 is a Dataset with repeated versions of synthetic learning notes.
+
+## d3_metric
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_delta; SECTION_KEY=d3_metric]
+DeltaIndexer REPORTS Recall@5. Recall@5 is the Metric used when fast retrieval should surface a relevant chunk in the first five results.
+
+## d4_concept
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_delta; SECTION_KEY=d4_concept]
+DeltaIndexer USES Chunk Stability. Chunk Stability is a Concept about preserving stable identifiers for unchanged evidence.
+
+## d5_compare
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_delta; SECTION_KEY=d5_compare]
+Paper Delta Memo COMPARES_WITH FluxRank. DeltaIndexer controls indexing freshness, while FluxRank controls how dense, BM25, and graph candidates are fused.

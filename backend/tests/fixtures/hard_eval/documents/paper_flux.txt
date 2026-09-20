@@ -1,0 +1,21 @@
+﻿# Paper F: Flux Rank Note
+
+## f1_scope
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_flux; SECTION_KEY=f1_scope]
+Paper Flux Note USES FluxRank. FluxRank TARGETS Method Comparison by combining dense similarity, lexical matches, and graph-expanded evidence.
+
+## f2_dataset
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_flux; SECTION_KEY=f2_dataset]
+FluxRank is EVALUATED_ON MetroReviews. MetroReviews is a Dataset of artificial review snippets about retrieval modes.
+
+## f3_metric
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_flux; SECTION_KEY=f3_metric]
+FluxRank REPORTS Latency P95. Latency P95 is a Metric for checking whether difficult retrieval remains acceptable during demos.
+
+## f4_concept
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_flux; SECTION_KEY=f4_concept]
+FluxRank USES Evidence Stitching. Evidence Stitching lets a ranked list include chunks that complement each other instead of repeating one fact.
+
+## f5_compare
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_flux; SECTION_KEY=f5_compare]
+Paper Flux Note COMPARES_WITH DeltaIndexer. The note separates ranking behavior from incremental indexing behavior.

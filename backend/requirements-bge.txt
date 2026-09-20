@@ -1,0 +1,7 @@
+# Resolve together so Transformers cannot upgrade beyond Chroma tokenizers constraints.
+-r requirements.txt
+# Optional dependencies for real local Chinese semantic retrieval.
+# Install only when using EMBEDDING_PROVIDER=bge.
+sentence-transformers>=3.3.1,<4.0.0
+# XLM-R tokenizer used by the optional BGE reranker.
+sentencepiece==0.2.0

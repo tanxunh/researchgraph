@@ -1,0 +1,21 @@
+﻿# Paper B: Beacon Planner Note
+
+## b1_scope
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_beacon; SECTION_KEY=b1_scope]
+Paper Beacon Note USES BeaconPlanner. BeaconPlanner TARGETS Study Planning by converting extracted concepts into review actions and lightweight todo lists.
+
+## b2_dataset
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_beacon; SECTION_KEY=b2_dataset]
+BeaconPlanner is EVALUATED_ON WorkshopCards. WorkshopCards is a Dataset made of synthetic workshop notes with deadlines, questions, and resource names.
+
+## b3_metric
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_beacon; SECTION_KEY=b3_metric]
+BeaconPlanner REPORTS Complete Evidence Recall. This Metric asks whether all required evidence chunks for a cross-document question are returned together.
+
+## b4_concept
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_beacon; SECTION_KEY=b4_concept]
+BeaconPlanner USES Evidence Stitching. Evidence Stitching is a Concept for joining task cues from one document with evaluation cues from another.
+
+## b5_compare
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_beacon; SECTION_KEY=b5_compare]
+Paper Beacon Note COMPARES_WITH AtlasRetriever. The synthetic comparison says planning quality depends on retrieval coverage from AtlasRetriever.

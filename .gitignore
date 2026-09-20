@@ -1,0 +1,125 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment files
+.env
+.env.*
+!.env.example
+*.env.local
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Project runtime data
+exports/
+storage/
+!backend/app/storage/
+!backend/app/storage/*.py
+chroma_db/
+chroma_data/
+uploads/
+data/
+backups/
+dumps/
+*.sql
+*.sql.gz
+*.sql.zip
+*.dump
+*.bak
+!backend/migrations/*.sql
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+.vite-build-test/
+.vite-temp/
+
+# Local runtime logs / temp files
+.tmp/
+tmp/
+temp/
+*.log
+*.pid
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+.coverage*
+coverage/
+htmlcov/
+coverage.xml
+junit*.xml
+test-results/
+playwright-report/
+# Generated evaluator output is not a validated benchmark.
+reports/*.json
+reports/*.jsonl
+reports/*.md
+backend/reports/
+backend/tests/fixtures/hard_eval/resolved_cases.jsonl
+
+# Local research PDFs; manifests and annotations remain versionable.
+/benchmarks/real_research/papers/*.[pP][dD][fF]
+/benchmarks/real_reasearch/papers/*.[pP][dD][fF]
+
+# Local execution captures may contain paper snippets and machine paths.
+/artifacts/
+**/traces/
+*.trace.json
+*.har
+
+# Local credentials, tool settings, model weights and internal acceptance notes.
+runtime.env
+*.key
+*.pem
+.claude/
+*.safetensors
+*.onnx
+*.pt
+*.pth
+/docs/PHASE*_VALIDATION.md
+/docs/phase0_repository_state.json
+/docs/RELEASE_GATE.md
+# Existing tracked notes must also be removed from the index before publication.
+
+# PDFs are local inputs, including old manually-created upload fixtures.
+*.[pP][dD][fF]
+# Keep frozen dataset definitions used by regression; exclude local execution records.
+/benchmarks/agent/results/
+/benchmarks/agent/phase10_1/
+/benchmarks/agent/badcases/
+/benchmarks/agent/*REVIEW.md
+/benchmarks/real_research/results/
+/benchmarks/real_research/annotation_catalog.jsonl
+/benchmarks/real_research/PILOT_ANNOTATION_REVIEW.md
+/benchmarks/real_research/corpus_discovery.json
+/benchmarks/real_research/onboarding_report.json
+/benchmarks/real_research/pilot_finalization*.json
+/benchmarks/real_research/pilot_queries_candidates.json
+
+# Independent public export: no local tooling, credentials or runtime assets.
+.agents/
+.codex/
+*.env
+!.env.example
+mysql_data/
+model_cache/
+huggingface/
+*.bin
+*.dump
+
+# Local publication bookkeeping (not public documentation).
+/docs/FILES_TO_STAGE.txt
+/docs/PUBLIC_REPOSITORY_AUDIT.md
+/docs/EXPORT_SOURCE_MANIFEST.json

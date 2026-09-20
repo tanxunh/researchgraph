@@ -1,0 +1,13 @@
+import { App, Alert, Button, Card, Empty, Popconfirm, Skeleton, Tag } from 'antd';
+import { normalizeApiError } from '../api/errors';
+export function PageHeader({ title, description, actions, eyebrow }) {
+  return <header className="page-heading">{eyebrow && <p className="eyebrow">{eyebrow}</p>}<div className="heading-row"><h1>{title}</h1>{actions}</div>{description && <p className="page-description">{description}</p>}</header>;
+}
+export function SectionCard({ children, ...props }) { return <Card className="section-card" {...props}>{children}</Card>; }
+const states = { queued:['Queued','default'], running:['Running','processing'], processing:['Processing','processing'], ready:['Ready','success'], succeeded:['Completed','success'], completed:['Completed','success'], offline:['Offline','default'], partial:['Partial','warning'], failed:['Failed','error'], insufficient:['Insufficient evidence','warning'], insufficient_evidence:['Insufficient evidence','warning'] };
+export function StatusBadge({ status, label }) { const [text,color] = states[status] || [status,'default']; return <Tag color={color}>{label || text}</Tag>; }
+export function LoadingState({ label = 'Loading workspace...' }) { return <div role="status" aria-live="polite" className="state-block"><p>{label}</p><Skeleton active paragraph={{ rows: 3 }} title={false} /></div>; }
+export function EmptyState({ title, description, action, compact = false }) { if (compact) return <div className="search-empty"><h2>{title}</h2>{description && <p>{description}</p>}{action}</div>; return <div className="state-block"><Empty image={Empty.PRESENTED_IMAGE_SIMPLE} description={<><h3>{title}</h3><p className="muted">{description}</p></>} />{action}</div>; }
+export function ErrorState({ error, onRetry }) { const e = normalizeApiError(error); return <Alert className={['backend_unavailable','network_error'].includes(e.error_code)?'connection-error':undefined} type={['backend_unavailable','network_error'].includes(e.error_code)?'info':'error'} showIcon message={e.message} description={<details><summary>Advanced details</summary><code>{e.error_code}{e.http_status ? ` / HTTP ${e.http_status}` : ''}</code></details>} action={onRetry && <Button onClick={onRetry}>Try again</Button>} />; }
+export function useAppToast() { const { message } = App.useApp(); return { success: text => message.success(text), error: error => message.error(normalizeApiError(error).message) }; }
+export function ConfirmAction({ title, onConfirm, children, disabled = false }) { return <Popconfirm title={title} onConfirm={onConfirm} disabled={disabled} okText="Confirm" cancelText="Cancel">{children}</Popconfirm>; }

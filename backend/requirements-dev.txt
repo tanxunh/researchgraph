@@ -1,0 +1,5 @@
+# Install alongside requirements.txt. CI and Docker tests use both.
+# Runtime images do not need these test tools.
+pytest==8.3.4
+pytest-asyncio==0.25.3
+pytest-cov==6.0.0

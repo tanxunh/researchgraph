@@ -1,0 +1,21 @@
+﻿# Paper C: Cascade Reader Brief
+
+## c1_scope
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_cascade; SECTION_KEY=c1_scope]
+Paper Cascade Brief USES CascadeReader. CascadeReader TARGETS Cross Paper Evidence by reading several small research notes before composing a single answer.
+
+## c2_dataset
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_cascade; SECTION_KEY=c2_dataset]
+CascadeReader is EVALUATED_ON CitationWeave. CitationWeave is a Dataset where relation facts are intentionally split across paper cards.
+
+## c3_metric
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_cascade; SECTION_KEY=c3_metric]
+CascadeReader REPORTS MRR@10. MRR@10 is a Metric that rewards placing the first relevant source near the top of retrieval results.
+
+## c4_concept
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_cascade; SECTION_KEY=c4_concept]
+CascadeReader USES Relation Path. Relation Path is a Concept that records source entity, relation type, target entity, and an evidence chunk.
+
+## c5_compare
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_cascade; SECTION_KEY=c5_compare]
+Paper Cascade Brief COMPARES_WITH EchoGraph. It states that EchoGraph contributes relation paths while CascadeReader consumes those paths in answer synthesis.

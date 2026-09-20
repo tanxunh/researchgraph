@@ -1,0 +1,21 @@
+﻿# Paper G: Gradient Memo Card
+
+## g1_scope
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_gradient; SECTION_KEY=g1_scope]
+Paper Gradient Card USES GradientMemo. GradientMemo TARGETS Experiment Recall by linking experimental decisions with later review questions.
+
+## g2_dataset
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_gradient; SECTION_KEY=g2_dataset]
+GradientMemo is EVALUATED_ON TimelineQA. TimelineQA is a Dataset containing synthetic dated note fragments and follow-up prompts.
+
+## g3_metric
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_gradient; SECTION_KEY=g3_metric]
+GradientMemo REPORTS Complete Evidence Recall. It uses the Metric to check whether timeline facts and method facts appear together.
+
+## g4_concept
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_gradient; SECTION_KEY=g4_concept]
+GradientMemo USES Query Paraphrase. Query Paraphrase is a Concept where the question changes wording but keeps the same retrieval intent.
+
+## g5_compare
+[SYNTHETIC TEST CORPUS; DOCUMENT_KEY=paper_gradient; SECTION_KEY=g5_compare]
+Paper Gradient Card COMPARES_WITH HarborQA. GradientMemo favors memory recall, while HarborQA favors grounded question answering.
