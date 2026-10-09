@@ -1,3 +1,5 @@
+> Product deployment uses the current application defaults (BGE-small-zh, RRF k=60, reranker OFF). The frozen BGE-M3/weighted-RRF V2 evaluation configuration is not activated by this Quick Start. See [V2 evaluation](evaluation_v2.md) and [data policy](evaluation_data_policy.md).
+
 # Local deployment
 
 ## Quick Start

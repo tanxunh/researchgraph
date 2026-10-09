@@ -1,0 +1,7 @@
+query_type,n,description,final_R@10,final_MRR@10,Hybrid_CR@20,Hybrid_CR@50
+factual,8,descriptive / low-sample,0.75,0.4083333333333333,0.75,0.75
+exact_term,5,descriptive / low-sample,0.8,0.4866666666666667,0.8,1.0
+semantic,8,descriptive / low-sample,0.875,0.30625,1.0,1.0
+relational,5,descriptive / low-sample,0.5,0.6,0.5,0.8
+cross_document,8,descriptive / low-sample,0.041666666666666664,0.015625,0.08333333333333333,0.4479166666666667
+multi_hop,6,descriptive / low-sample,0.6388888888888888,0.6555555555555556,0.6388888888888888,0.8611111111111112

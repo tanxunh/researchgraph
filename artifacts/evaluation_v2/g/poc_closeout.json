@@ -1,0 +1,55 @@
+{
+  "WHAT_WE_CANNOT_CLAIM": [
+    "Production readiness or historical production Agent performance.",
+    "Independent human-blind evaluation or human endorsement.",
+    "Reliable cross-paper retrieval / universal multi-hop success.",
+    "Statistically generalizable superiority from n=40 or causal benefit of supplemental retrieval.",
+    "Zero hallucination rate from Track A unsupported-count zero."
+  ],
+  "WHAT_WE_CAN_CLAIM": [
+    "V2 retrieval was optimized on DEV and frozen before the single final retrieval TEST; no post-TEST retrieval tuning.",
+    "Saved V2-F results show positive reranker value on this TEST, not general superiority.",
+    "A and B-R use the same frozen 40-task benchmark; B-R uses frozen V2 retrieval in a reconstructed evaluation runtime.",
+    "Semantic judgments are MODEL_ASSISTED_SEMANTIC_REVIEW, with 80 frozen records and two workflow failures retained.",
+    "Observed paired outcomes: nine improvements, thirty unchanged, one regression."
+  ],
+  "all_frozen_config_hashes": {
+    "final_chunking_config.json": "008845cdc4c45d8921173138d8b8591fa06d85e44082a5d73627801be3887079",
+    "final_dense_config.json": "8842ce493055ce775fdff46c3851420e6965d80959f01faf5c5d2da2a37b1f96",
+    "final_fusion_config.json": "f1707c358cadd7ceb162119811976ecfa1ea57fe6f40588bbd7a55b479c24360",
+    "final_reranker_config.json": "5c800c65a9cf9b5549d81023a9467e58a15b75389d482d1e04f5aba8c01e6870",
+    "final_retrieval_manifest.json": "bc601f31786987de88a1a9b1851508960332371654bc9d3a81f0e4a8a4f94e7a",
+    "v2_g_generation_config.json": "c8769ccd18be625b89bae794e753633736d1fe0e4bd6defe497661e70978d147",
+    "v2_g_runtime_provenance.json": "f745940fd3dbdd94c1dbad5c806078c637ec89aff7eaeb12a969baa838bb0b5b",
+    "v2_g_track_a_context_config.json": "0c0a190a5f816490e440f7f0dcbaf769450b633807947e0ef2613d2e64fadcd3",
+    "v2_g_track_b_reconstructed_config.json": "a20018f36ab2904bdd8decb71e58d05be82c75daa42540e29c91ef00bbcff422",
+    "v2_g_workflow_benchmark.json": "39b30aa7152b6d12aae82a2902a7baa731685de182499e2d505b329ab8493658"
+  },
+  "benchmark_hash": "39b30aa7152b6d12aae82a2902a7baa731685de182499e2d505b329ab8493658",
+  "completed_review_hash": "0d7e07c0e65301d8e3abf90737c8189800f8b522f43de1f629136cf219acef77",
+  "decision_reason": "Exact Gold ceiling and cross-paper recovery remain limited, while supplied evidence is judged sufficient for 32/40 A and 37/40 B-R. A has eight missed-opportunity abstentions; B-R has contradictions, omissions and two failures. Agent improves nine pairs but recovers missing exact Gold in only four; no single causal bottleneck is established. Prioritize evidence-use/synthesis as one optional next phase; do not implement it.",
+  "dominant_bottleneck": "MIXED",
+  "final_retrieval_manifest_hash": "bc601f31786987de88a1a9b1851508960332371654bc9d3a81f0e4a8a4f94e7a",
+  "final_test_status": "COMPLETE",
+  "git_diff_check": "PASS",
+  "historical_runtime_recovered": false,
+  "no_answer_regeneration": true,
+  "no_llm_calls": true,
+  "no_new_optimization_started": true,
+  "no_retrieval_calls": true,
+  "recommended_next_phase": "GENERATION_SYNTHESIS_OPTIMIZATION",
+  "research_workflow_readiness": "PARTIAL",
+  "retrieval_optimization_status": "COMPLETE",
+  "review_method": "MODEL_ASSISTED_SEMANTIC_REVIEW",
+  "review_summary_hash": "4959228e3c3f541492aa7382d98f87e4a965f1cb6fffed04c94d492bc34fc2fb",
+  "tests": {
+    "failed": 0,
+    "passed": 16,
+    "scope": "standard-library offline integrity only"
+  },
+  "track_a": "FROZEN_CONTEXT",
+  "track_b": "RECONSTRUCTED_RESEARCH_AGENT",
+  "v2_status": "COMPLETE",
+  "workflow_poc_status": "COMPLETE",
+  "workflow_runtime": "RECONSTRUCTED_EVALUATION_RUNTIME"
+}

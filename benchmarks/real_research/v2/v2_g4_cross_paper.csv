@@ -1,0 +1,17 @@
+track,query_id,answer_correctness,citation_correctness,unsupported_claims,required_documents,cited_documents,all_documents_used,all_required_gold_available,poc_result,low_sample,all_gold_top10,all_gold_hybrid20,supplemental_calls,recovered_missing_gold,all_missing_gold_recovered,A_incomplete_B_complete,A_complete_B_incomplete
+A,V2Q019,PARTIAL,NONE,0,"[3, 12]",[],False,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,4,0,False,False,False
+A,V2Q020,PARTIAL,NONE,0,"[22, 25]",[],False,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,4,1,False,False,False
+A,V2Q021,INCORRECT,NONE,0,"[5, 26]",[],False,False,FAIL,LOW_SAMPLE_DESCRIPTIVE,False,False,4,0,False,False,False
+A,V2Q022,INCORRECT,NONE,0,"[6, 30]",[],False,False,FAIL,LOW_SAMPLE_DESCRIPTIVE,False,False,2,0,False,False,False
+A,V2Q059,PARTIAL,NONE,0,"[2, 30]",[],False,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,4,1,False,False,False
+A,V2Q060,PARTIAL,NONE,0,"[8, 29]",[],False,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,4,0,False,False,False
+A,V2Q062,PARTIAL,NONE,0,"[13, 21]",[],False,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,2,2,True,False,False
+A,V2Q064,PARTIAL,NONE,0,"[23, 26]",[],False,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,3,0,False,True,False
+B-R,V2Q019,PARTIAL,PARTIAL,1,"[3, 12]",[3],False,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,4,0,False,False,False
+B-R,V2Q020,PARTIAL,ALL,0,"[22, 25]","[22, 25]",True,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,4,1,False,False,False
+B-R,V2Q021,PARTIAL,ALL,0,"[5, 26]","[5, 26]",True,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,4,0,False,False,False
+B-R,V2Q022,PARTIAL,ALL,0,"[6, 30]","[6, 30]",True,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,2,0,False,False,False
+B-R,V2Q059,PARTIAL,PARTIAL,1,"[2, 30]","[2, 30]",True,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,4,1,False,False,False
+B-R,V2Q060,PARTIAL,ALL,0,"[8, 29]","[8, 29]",True,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,4,0,False,False,False
+B-R,V2Q062,PARTIAL,PARTIAL,3,"[13, 21]","[13, 21]",True,True,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,2,2,True,False,False
+B-R,V2Q064,COMPLETE,ALL,0,"[23, 26]","[23, 26]",True,False,FULL,LOW_SAMPLE_DESCRIPTIVE,False,False,3,0,False,True,False

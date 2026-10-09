@@ -43,3 +43,30 @@ class ResearchManifest(StrictModel):
     corpus_kind: Literal['real_papers']
     documents: list[CorpusDocument]
     queries_path: str
+
+
+class V2GoldEvidence(StrictModel):
+    paper_id: str = Field(pattern=r'^P\d{3}$')
+    document_id: int = Field(gt=0)
+    document_version_id: int = Field(gt=0)
+    chunk_id: str = Field(min_length=1)
+    page: int | None = Field(default=None, ge=1)
+    section: str | None = None
+
+
+class V2ResearchQuery(StrictModel):
+    """Frozen V2 query contract for DEV and TEST JSONL files."""
+
+    query_id: str = Field(pattern=r'^V2Q\d{3}$')
+    query: str = Field(min_length=1)
+    query_type: Literal['factual', 'exact_term', 'semantic', 'relational', 'cross_document', 'multi_hop']
+    document_scope: Literal['global'] | list[int]
+    gold_evidence: list[V2GoldEvidence] = Field(min_length=1)
+    human_verified: bool
+    notes: str
+
+    @property
+    def scoped_document_ids(self) -> list[int] | None:
+        if self.document_scope == 'global':
+            return None
+        return self.document_scope

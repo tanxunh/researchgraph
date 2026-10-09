@@ -1,0 +1,1695 @@
+{
+  "A_complete_B_incomplete": 1,
+  "A_incomplete_B_complete": 6,
+  "abstention": {
+    "A": {
+      "counts": {
+        "MISSED_OPPORTUNITY_ABSTENTION": 8,
+        "SAFE_ABSTENTION": 8
+      },
+      "definition": "A: explicit whole-answer abstention; B-R: any system insufficient-evidence cell in a validated report. Sufficient review OR all exact Gold => missed opportunity; otherwise safe under the frozen evidence-sufficiency review. B fields exceed some questions; this is not a task failure count.",
+      "items": [
+        {
+          "all_exact_gold_available": false,
+          "classification": "SAFE_ABSTENTION",
+          "query_id": "V2Q008",
+          "review_evidence": "INSUFFICIENT",
+          "semantic_status": "PARTIAL"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "SAFE_ABSTENTION",
+          "query_id": "V2Q019",
+          "review_evidence": "PARTIAL",
+          "semantic_status": "PARTIAL"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "SAFE_ABSTENTION",
+          "query_id": "V2Q020",
+          "review_evidence": "PARTIAL",
+          "semantic_status": "PARTIAL"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q021",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "INCORRECT"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q022",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "INCORRECT"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q025",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "INCORRECT"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q026",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "INCORRECT"
+        },
+        {
+          "all_exact_gold_available": true,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q048",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "INCORRECT"
+        },
+        {
+          "all_exact_gold_available": true,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q052",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "INCORRECT"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "SAFE_ABSTENTION",
+          "query_id": "V2Q058",
+          "review_evidence": "PARTIAL",
+          "semantic_status": "PARTIAL"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "SAFE_ABSTENTION",
+          "query_id": "V2Q059",
+          "review_evidence": "PARTIAL",
+          "semantic_status": "PARTIAL"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "SAFE_ABSTENTION",
+          "query_id": "V2Q060",
+          "review_evidence": "PARTIAL",
+          "semantic_status": "PARTIAL"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "SAFE_ABSTENTION",
+          "query_id": "V2Q062",
+          "review_evidence": "PARTIAL",
+          "semantic_status": "PARTIAL"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "SAFE_ABSTENTION",
+          "query_id": "V2Q064",
+          "review_evidence": "PARTIAL",
+          "semantic_status": "PARTIAL"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q073",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "INCORRECT"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q075",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "INCORRECT"
+        }
+      ]
+    },
+    "B-R": {
+      "counts": {
+        "MISSED_OPPORTUNITY_ABSTENTION": 12,
+        "SAFE_ABSTENTION": 3
+      },
+      "definition": "A: explicit whole-answer abstention; B-R: any system insufficient-evidence cell in a validated report. Sufficient review OR all exact Gold => missed opportunity; otherwise safe under the frozen evidence-sufficiency review. B fields exceed some questions; this is not a task failure count.",
+      "items": [
+        {
+          "all_exact_gold_available": true,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q003",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "COMPLETE"
+        },
+        {
+          "all_exact_gold_available": true,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q007",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "COMPLETE"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "SAFE_ABSTENTION",
+          "query_id": "V2Q008",
+          "review_evidence": "INSUFFICIENT",
+          "semantic_status": "PARTIAL"
+        },
+        {
+          "all_exact_gold_available": true,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q011",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "COMPLETE"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q014",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "COMPLETE"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q019",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "PARTIAL"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "SAFE_ABSTENTION",
+          "query_id": "V2Q020",
+          "review_evidence": "PARTIAL",
+          "semantic_status": "PARTIAL"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q021",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "PARTIAL"
+        },
+        {
+          "all_exact_gold_available": true,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q028",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "COMPLETE"
+        },
+        {
+          "all_exact_gold_available": true,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q058",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "COMPLETE"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q059",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "PARTIAL"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "SAFE_ABSTENTION",
+          "query_id": "V2Q060",
+          "review_evidence": "PARTIAL",
+          "semantic_status": "PARTIAL"
+        },
+        {
+          "all_exact_gold_available": true,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q062",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "PARTIAL"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q064",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "COMPLETE"
+        },
+        {
+          "all_exact_gold_available": false,
+          "classification": "MISSED_OPPORTUNITY_ABSTENTION",
+          "query_id": "V2Q073",
+          "review_evidence": "SUFFICIENT",
+          "semantic_status": "COMPLETE"
+        }
+      ]
+    }
+  },
+  "ceiling_semantic_crosstab": {
+    "ANSWERABLE_FROM_TOP10": {
+      "COMPLETE": 18,
+      "INCORRECT": 2,
+      "PARTIAL": 1
+    },
+    "ANSWERABLE_FROM_TOP20": {
+      "COMPLETE": 1,
+      "INCORRECT": 0,
+      "PARTIAL": 0
+    },
+    "NOT_ANSWERABLE_FROM_TOP20": {
+      "COMPLETE": 4,
+      "INCORRECT": 6,
+      "PARTIAL": 8
+    }
+  },
+  "checksum": {
+    "answer_correctness": {
+      "COMPLETE": 51,
+      "INCORRECT": 11,
+      "PARTIAL": 18
+    },
+    "citation_correctness": {
+      "ALL": 58,
+      "NONE": 18,
+      "PARTIAL": 4
+    },
+    "evidence_sufficiency": {
+      "INSUFFICIENT": 2,
+      "PARTIAL": 9,
+      "SUFFICIENT": 69
+    },
+    "items_with_unsupported_claims": 4,
+    "review_items": 80,
+    "unsupported_claims_total": 7
+  },
+  "citation_quality": {
+    "A": {
+      "ALL": 24,
+      "NONE": 16,
+      "PARTIAL": 0,
+      "complete_all": 23,
+      "complete_partial_or_none": 0,
+      "partial_all": 1
+    },
+    "B-R": {
+      "ALL": 34,
+      "NONE": 2,
+      "PARTIAL": 4,
+      "complete_all": 28,
+      "complete_partial_or_none": 0,
+      "partial_all": 6
+    }
+  },
+  "cross_document": {
+    "A": {
+      "FAIL": 2,
+      "PARTIAL": 6
+    },
+    "B-R": {
+      "FULL": 1,
+      "PARTIAL": 7
+    }
+  },
+  "decision_reason": "Exact Gold ceiling and cross-paper recovery remain limited, while supplied evidence is judged sufficient for 32/40 A and 37/40 B-R. A has eight missed-opportunity abstentions; B-R has contradictions, omissions and two failures. Agent improves nine pairs but recovers missing exact Gold in only four; no single causal bottleneck is established. Prioritize evidence-use/synthesis as one optional next phase; do not implement it.",
+  "dominant_bottleneck": "MIXED",
+  "failure_counts": {
+    "A": {
+      "CITATION_ERROR": 0,
+      "EVIDENCE_SELECTION_MISS": 3,
+      "OTHER": 0,
+      "RERANKER_MISS": 0,
+      "RETRIEVAL_MISS": 14,
+      "SYNTHESIS_ERROR": 0,
+      "UNSUPPORTED_INFERENCE": 0,
+      "WORKFLOW_TECHNICAL_FAILURE": 0
+    },
+    "B-R": {
+      "CITATION_ERROR": 0,
+      "EVIDENCE_SELECTION_MISS": 1,
+      "OTHER": 0,
+      "RERANKER_MISS": 0,
+      "RETRIEVAL_MISS": 9,
+      "SYNTHESIS_ERROR": 0,
+      "UNSUPPORTED_INFERENCE": 0,
+      "WORKFLOW_TECHNICAL_FAILURE": 2
+    }
+  },
+  "git_diff_check": "PASS",
+  "intensity": {
+    "calls_per_task": {
+      "max": 8,
+      "mean": 5.025,
+      "median": 4.0,
+      "n": 40,
+      "p95": 8.0
+    },
+    "llm_calls": {
+      "max": 16,
+      "mean": 7.75,
+      "median": 6.0,
+      "n": 40,
+      "p95": 15.0
+    },
+    "percentile_method": "linear interpolation at (n-1)*p",
+    "subquery_invocations_per_task": {
+      "max": 8,
+      "mean": 5.025,
+      "median": 4.0,
+      "n": 40,
+      "p95": 8.0
+    },
+    "supplemental_tasks": 19,
+    "total_retrieval_calls": 201,
+    "unique_admitted_chunks": {
+      "max": 14,
+      "mean": 9,
+      "median": 9.0,
+      "n": 40,
+      "p95": 13.0
+    },
+    "unique_admitted_documents": {
+      "max": 2,
+      "mean": 1.2,
+      "median": 1.0,
+      "n": 40,
+      "p95": 2.0
+    },
+    "unique_returned_chunks": {
+      "max": 43,
+      "mean": 22.5,
+      "median": 20.0,
+      "n": 40,
+      "p95": 34.05
+    },
+    "unique_returned_documents": {
+      "max": 16,
+      "mean": 6.55,
+      "median": 6.0,
+      "n": 40,
+      "p95": 15.049999999999997
+    },
+    "unique_subqueries_per_task": {
+      "max": 8,
+      "mean": 5.025,
+      "median": 4.0,
+      "n": 40,
+      "p95": 8.0
+    },
+    "workflow_latency_ms": {
+      "max": 101586.88990600013,
+      "mean": 58965.189958525,
+      "median": 51217.834932500016,
+      "n": 40,
+      "p95": 98733.16965140004
+    }
+  },
+  "mapping_proof": [
+    {
+      "answer_sha256": "ebb8c35bf876dd4678dddb97078dd185001e311058ec1837e5f44b65e8e4538c",
+      "citation_payload_sha256": "8478eacf7664dbce859a728cce78a392e5b9f8d504e82c87dc7ee3ee60f92915",
+      "provided_evidence_section_sha256": "00f4018d67a5b49572bac68127c477b285314ca4942b5543beaa21d9d1632b02",
+      "query_id": "V2Q010",
+      "review_item_id": "R001",
+      "review_payload_sha256": "31a1873fe2e2f83024f542d917ef315df2e960de33d86d6b9a9c8d5731a236e2",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "40a02f7e144d02f3d7f5261b3a17b7d83866d48fc8a3c45a3662ffc76b478865",
+      "citation_payload_sha256": "89ce04b8f923925316b4cffd8480d870ccbc2b8083bb4c6802d31ea2b399e57d",
+      "provided_evidence_section_sha256": "62cb860cf5a877f22962696c2131c1de51b5a6cc75e0e3dffa088080c7ac29b8",
+      "query_id": "V2Q016",
+      "review_item_id": "R002",
+      "review_payload_sha256": "e28385cc5a8e6ef9614cd8a84a855c6afbc901cdcdb63985811ca7ee0f116f1f",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "4eaba835e93cd46f23cff05dc3c762be76e4fa01b95796d1a1b50ea6e76670c0",
+      "citation_payload_sha256": "a913443aab06bc6f98199b6a9c5bd3838463f2e5c670af310d367ca3dee7e941",
+      "provided_evidence_section_sha256": "4246681fe5ae0d54aec1ad4c662da452839ada8cbfe88ec50363bedade82cd84",
+      "query_id": "V2Q062",
+      "review_item_id": "R003",
+      "review_payload_sha256": "a6f3750037a42c4dfa437104c5fb7f6f3d0e7d0b9c77a183eb569361037ebd32",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "818709fb8d34147bcf06af922ec0f6005c942a96ec15d8384a11259ac1f94ef4",
+      "citation_payload_sha256": "891a1ff7863a56536d41ca54c1359cc5e8178117ce733f71373a451c7e4e32f8",
+      "provided_evidence_section_sha256": "5c8db5c9b79cb0dfa81cc8b5c88e8b3d12dc98d9d0035d30ff08a3d7bef09ae3",
+      "query_id": "V2Q015",
+      "review_item_id": "R004",
+      "review_payload_sha256": "56ad6adc591b0b6fa1db4d4a7368bfbbd7456e3677b04d4ea44f35ede2f4d78a",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "8410838f804ce37d8b58814a2881a6d6d6cf325af13ab4cad156802ec1c2bd2e",
+      "citation_payload_sha256": "48a626fec6d9f728b195c5207ebdd7e9149e775b2d192def451d00171979c3a8",
+      "provided_evidence_section_sha256": "fbc5e383a6af30a7b010884314fdbd57c8391daa1af11332f24301361c88f9ab",
+      "query_id": "V2Q028",
+      "review_item_id": "R005",
+      "review_payload_sha256": "ca7ec59b70399186f94ba764df73242bc034c827f8d46db56d8d6ee8930f4e03",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "eb5ce89d3376fdbbf7426d375983763a5d2f3630f32ba9cbdb3c809488f2d72f",
+      "citation_payload_sha256": "dda4db424ed6d97ce9fca5f59c4a3d95c4512c14f87b12174daeace57bb277e0",
+      "provided_evidence_section_sha256": "130bb86f89656896070782bb39c26f193d916d5356208d8072aec224a2cc6d5c",
+      "query_id": "V2Q005",
+      "review_item_id": "R006",
+      "review_payload_sha256": "986899523f8afc41be67e5468e1c6172b923ec446916adaab55f6471be564b42",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "b803c79e9f92780c218441ab2b0f29538231902487e34003e6dd13a77d278b0b",
+      "query_id": "V2Q025",
+      "review_item_id": "R007",
+      "review_payload_sha256": "9ff26feba94481997ddfbee54ae0bc582c802a578108741cecf08b575877cc5d",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "f1ea927e7c107c3e1345eaee6376ce722671a33dff0903035f80161ee57e953b",
+      "citation_payload_sha256": "ffb46b20da8d47a7712533062bd205809436d113c259da356fedab36a63ee74e",
+      "provided_evidence_section_sha256": "a6900690a1e1cd3ba2be601caf8da2ab675dfbfa7514893ecfd201c49e4acf6a",
+      "query_id": "V2Q041",
+      "review_item_id": "R008",
+      "review_payload_sha256": "7714efdff868c0cc71c77c20b5e70d32c3af5edc3bf597f1219c51e8443b6eef",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "bc650fa8a9eb74400421f9796553d871657ba4ea14bb156c1ecafe29274b2326",
+      "citation_payload_sha256": "a0ebab51a9cdb4ad6f3eca7d8c6bc7bbf9a65bfcacb4846a3e8f0fd5aa974a77",
+      "provided_evidence_section_sha256": "4f81c30b8c8f840a436e7c11d802af865ff0f85fe1fddcf05bd2ece197124939",
+      "query_id": "V2Q014",
+      "review_item_id": "R009",
+      "review_payload_sha256": "4c8b0edaa827f2a45e8f097c194e86d0030857bfb108fa73dcbec1e832fa3f06",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "b7942e4f13d6a522030cbd487b3744ef7baf852535a95bfdb52dc506a378eb0c",
+      "query_id": "V2Q064",
+      "review_item_id": "R010",
+      "review_payload_sha256": "31037c8e185606a41eeb72bfa1a625c0707381893dee43d94f4bfd32a0204a79",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "f5fd45a34416c0b3a0bc7758d1acebeb6e2480f31a3c43550857a857fbc4b47f",
+      "citation_payload_sha256": "9b3fb98601562a5da15bbab85f32c915d139590db00295cf425cd014ce875c27",
+      "provided_evidence_section_sha256": "aa681c0164a89b8665679c83e923299cb7d632598ecf6689daa56f5bfe626c5e",
+      "query_id": "V2Q007",
+      "review_item_id": "R011",
+      "review_payload_sha256": "4f3caba2514004029cf788050bad14e40b944cc10b64adfb26c3a67b2896c496",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "f35cac8e4bb1680a84052b7d338d56047cad0e4cd4f380588a9b00b0ad737048",
+      "citation_payload_sha256": "d6dc769ed0bab98d7df20e283b628651b3dd378df56435dd2c83fff1865a2008",
+      "provided_evidence_section_sha256": "8676d1a746675e3e81e511d728e25f9de24d9e770f4fb1137d6b21e39af6effc",
+      "query_id": "V2Q013",
+      "review_item_id": "R012",
+      "review_payload_sha256": "933ab4ad2a6458fa0f1a9042c907d70c8a4b7e34288c2389fbd3d99681bac843",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "219ece84d0802612893032c4e2ed271ed363ddab9fc5eb143b0c0787d97565e8",
+      "citation_payload_sha256": "98f3ce1e4d59e610fd81703c2f8e8ccb425d97fbc65cde8270e429700a468f66",
+      "provided_evidence_section_sha256": "8cdc74efa1ccd35ab89e97e37b30d9a5359320c3dbfc010b702af2e70031618f",
+      "query_id": "V2Q012",
+      "review_item_id": "R013",
+      "review_payload_sha256": "83e90dc884992aa629f118b27c98d92217f188490310b14bd330f8a5bc72c3d7",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "480bf8553f970bb45adcdf0bccf13aa3a8d0e1faf41422cca9a97118a7a806a0",
+      "citation_payload_sha256": "eeea073194c09ad34fd722ed7de3aed16181ff9a82032d38e9061b3c6b6a2667",
+      "provided_evidence_section_sha256": "aaead419cf54cc2614a4839c74a006256d6a37a9cb1d13f9a5eeccecbe24899a",
+      "query_id": "V2Q006",
+      "review_item_id": "R014",
+      "review_payload_sha256": "e39985d00ec57e805c228139e9c5f045572273cd1fe5ed1ba5200f054d71d6b5",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "ed093cf58eb379e5b4d812e9ae80242dd372829d3823be811bcd59eb8d86685f",
+      "citation_payload_sha256": "5147b200e0ba030f2fc86a780580a67029b86277c1240d8d0c8eb8aa89aac0bf",
+      "provided_evidence_section_sha256": "a5f7c0b596e7fec1566b53a9ce0df0e98c7a13ae287e916d6a3484474d2f5f70",
+      "query_id": "V2Q060",
+      "review_item_id": "R015",
+      "review_payload_sha256": "ee0437e955d3078b69b3f14c28f00325858f5ba9e0c60221058b64c6e7abd2a8",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "c6deb747261b7eba105caa09a9b296697f94f73fc5edde153f41ee5ed524c4fe",
+      "query_id": "V2Q062",
+      "review_item_id": "R016",
+      "review_payload_sha256": "85ac9689f0ac12eb391f30969c6dc6d6823016a39e11f60509175d789c298142",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "2a2708684fa5e84dc639e16994d76c17e224b0ed0e02234647e594d037f475e1",
+      "citation_payload_sha256": "f0319bf32861afd57f54c97b07f0ee7c30f7eaa8bf0fc95c4b460b73ad744a67",
+      "provided_evidence_section_sha256": "a132c4b38e6ac1e495d5a521d2112bd80469d1243f668219f2e047331ae8b934",
+      "query_id": "V2Q003",
+      "review_item_id": "R017",
+      "review_payload_sha256": "64531de4cbb4c25afd5cb80c5b9f6b3740fead0e23b195c1edf9b26a0d116e04",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "b5252271b2a29a54b8d70a2347a4c18147505b6a0c636cbb695c85b6b444ea4a",
+      "citation_payload_sha256": "e1dcf186d9801f488c20f8f3c20f95690f139b50168090b8e24318a619d5746c",
+      "provided_evidence_section_sha256": "b2e29b46c24147ef895e172fae432361b032417067967fb8a5df2b316e45e90a",
+      "query_id": "V2Q002",
+      "review_item_id": "R018",
+      "review_payload_sha256": "8ab0723882ab09f1a478d180adc784c29b48fdd80c716daee7da0749e555a9b8",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "2f17171382f7dd5609a06a717ebfb01f9dc9125e503d4da2c332ebce4c8e599f",
+      "citation_payload_sha256": "7d02f0701a44f8d09ff9c82d634c222b589ce36d6e47e905c79c9fef00696f76",
+      "provided_evidence_section_sha256": "0efa48725725f7a70441209a73407942477d63772d4be8ed9de94f1ecf3c3b40",
+      "query_id": "V2Q018",
+      "review_item_id": "R019",
+      "review_payload_sha256": "1928e70950bdbfa18efcac07047679b6a8c864a6fd4900774b1d70d2b5c6eda9",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "4199568f105cf70e17323e35935bc9697ab34800918a0456de7a38a80444f56d",
+      "citation_payload_sha256": "4cc22ebb98100a9a87665b1b64e3558d2e9da2961dbb8420660b842857be52f6",
+      "provided_evidence_section_sha256": "02c4559b14f3aec35b4c9aec64cab795ac9f14c4eb3791eeaa767f193c52af8f",
+      "query_id": "V2Q045",
+      "review_item_id": "R020",
+      "review_payload_sha256": "6060626c504c93749e1c3623adc403584c461939408c5eb6c5121d8ec51af24b",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "0cf08b506c1dbf1effcf8b09ec24ae37d16d8830e8d5197eb618c70d7f60cf48",
+      "citation_payload_sha256": "f5f42bc94dc3d2870983a62858d57f2a81e559183b01312f840dabb5ed717053",
+      "provided_evidence_section_sha256": "7b44c54c47049534d707af4eefac8cc72d81996525a10b7e3a5904aab16aee8f",
+      "query_id": "V2Q014",
+      "review_item_id": "R021",
+      "review_payload_sha256": "4b43a1c62f21db05ca4d12cd402e1a05e872b02292ac65a5ad9be4359419e676",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "0deb27f6dbf3a61763c182468f0b2a4d43b7464012949f4ed0c078ec592e2426",
+      "citation_payload_sha256": "e9ac7cc12541a4db76d870567e3e4c1dec6f08d49ed6f10893ffb8d62fa8605d",
+      "provided_evidence_section_sha256": "6126fe2b54bfe625071a1a6ebcfaf2eb22dc5a74db4a7e90f74c93050a32643f",
+      "query_id": "V2Q004",
+      "review_item_id": "R022",
+      "review_payload_sha256": "71d620372fdb7f7066abcda29e0769baed45e873528980631d1cc71bb20ef86a",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "2f457d2689ee511ad4d5f1eff3f07385371c60d88fa833a76206bdd72c6009f2",
+      "citation_payload_sha256": "b0eb10a675f75cdb4a44b344ac17536c153b1ec17bc06f4c6766695338615a3b",
+      "provided_evidence_section_sha256": "61ec6ecc24097f6ed95a9cd54b5ea442077ee22eb18ef5652c94cc8100fd44d6",
+      "query_id": "V2Q058",
+      "review_item_id": "R023",
+      "review_payload_sha256": "6bcdd21bc1cc01f36007c3b5e3512caca428b8881acd6f03f75a77eefcfef622",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "98242b5a6e090a9118c2e99fe18076c618875ee023cfe06d8536b9d377baa397",
+      "citation_payload_sha256": "5652b2464c838ca2be5acf96a59e8529002e135f446fadca1d7b0fe79344634d",
+      "provided_evidence_section_sha256": "a9d1cb02e3a346c82b67de4083b61b70c2e3475c07d48a2d4b29a01ed0ab3abc",
+      "query_id": "V2Q059",
+      "review_item_id": "R024",
+      "review_payload_sha256": "72b9ec93b3e2507b72cca3387a21be5a06ca103eaf28fadd709323f072872e79",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "6feb33f917e14642faf9a8816467c56ceb9e9067b6578dc1ad81e21e86bf0758",
+      "citation_payload_sha256": "619a9850d4d8452760d3c922117ed4ab443b0bbd7fc22cf2fbd54af47e12d09d",
+      "provided_evidence_section_sha256": "dbcfbcb799b2e3d2cb65e7b32808cd20f5f1cb7d8b78d58d9f77dcd492224159",
+      "query_id": "V2Q005",
+      "review_item_id": "R025",
+      "review_payload_sha256": "89615c965315379ebb77fdbb8c6c7c2787c2cd7293b7cf45dd9ed67c2ae5e556",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "a60a10e0cac0d51862281c0a6e49cf255d559a5ea1dfc11a197b959d8ceaa7ae",
+      "citation_payload_sha256": "35bdd77ddc1e28ee21241d3157ca841734e7b6ab8299b4a370c47414108b2faa",
+      "provided_evidence_section_sha256": "beee5d8c2e890eab9a3e7815397657a37dd62adbcf4544c8ac1e6b4122ed3895",
+      "query_id": "V2Q003",
+      "review_item_id": "R026",
+      "review_payload_sha256": "0cfd14c6f25baeac4feaa0ffbcee5fec6d18f4371b3c81d6ea9154f87e1ae9e9",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "a7a5b62bcbcf90b78340e238f341fe55f7376d3c2b06d9d0b2340939e2e4be3b",
+      "query_id": "V2Q021",
+      "review_item_id": "R027",
+      "review_payload_sha256": "3fcb0c5427761855a85b17961bc6cb8255cf428f231690ab293872ec901c70cf",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "afb47bb69aa064cd1128d7b63cf405d5b1d6836357a5309cbc3aa4b65ca93366",
+      "citation_payload_sha256": "df6be137416a72767996700c6c00f3916368f2cb56dc466ed1ab5556ddd58c6a",
+      "provided_evidence_section_sha256": "9b13d9814ef3d1a13654d46ca021082d0ad3e34714f2f7b75aa536e4691eb5e5",
+      "query_id": "V2Q002",
+      "review_item_id": "R028",
+      "review_payload_sha256": "e04287b227711b827220aee9627a16df56f3021f8084c02cbe8f6ba10dd44de0",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "3de948de2d087b9af2f76225a60fa801ed2574f6f1d53137355e6cced99f722d",
+      "citation_payload_sha256": "49f8a53ef669255a5263226b6ae24b7bd43d6c41fcf1bb3954fbc4296ebc312c",
+      "provided_evidence_section_sha256": "8568831ddc8685f84e46873efd600f2d5d717e82356977e398527d8926f300ce",
+      "query_id": "V2Q024",
+      "review_item_id": "R029",
+      "review_payload_sha256": "bb9f5156430c3018114d001b66cda1e83a53d094d4e32de0e50de2977ecc02c8",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "017cb6a6360dfd4e679c833eea9afae4e9f45bde1c32f217c916c3df33c8b764",
+      "query_id": "V2Q022",
+      "review_item_id": "R030",
+      "review_payload_sha256": "ed5a4304b535343b7a160e2e1a6c9edc7539884b773b34e53e2471c98f1f165a",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "944fa3701856a628485c22038f9f2d651fb360d1c5021f753635f1536312b049",
+      "query_id": "V2Q075",
+      "review_item_id": "R031",
+      "review_payload_sha256": "bd7d45f13966d58cee97fc4fe3c3ec4c80e708dd8f58e6760e3f46bcd065bfd8",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "6f32bccbf52c907bde0c569d6191cab8dd57bd1533f0f1f8b02d157d6d484760",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "e1fc60485d867c206d5b1fc9c207e825c0370cfefe57b1dcbd62d5458d959898",
+      "query_id": "V2Q075",
+      "review_item_id": "R032",
+      "review_payload_sha256": "6fecd53f0f43f74bf43674f83c3aaa0aee95c27422cb1d0a2d314ed1e50a6b9d",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "b0dc11eb1cd0b5ff63dec1a316f3dad5069c80a3b2a747cd06459fbc7c28701b",
+      "query_id": "V2Q060",
+      "review_item_id": "R033",
+      "review_payload_sha256": "a327613ee23000fa317ac49715f728bdc946020fe0f492a5b7585fe0bfb0cd72",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "cdc63eaef9a2eadb5d9f55ea88418a024a13d8d3d7493a88688690029812c233",
+      "citation_payload_sha256": "27c1cd6f8fb3118448bf2b15f5f0b13171050a9de9a259e4e1f4ad8f88d8b95a",
+      "provided_evidence_section_sha256": "bc13296d7814d5845ed67f73f4ddc7b7e4172e495250e40f8bf72d2e7884a3a9",
+      "query_id": "V2Q040",
+      "review_item_id": "R034",
+      "review_payload_sha256": "5dc1a8394acd3b78d29726c6cee5b9d6f3e6f9627168ac3e0d28334aac6e499f",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "aa3a74761acfc59b055b61ad718017238dbc4bb2f8ada289d57cb27e7b248326",
+      "citation_payload_sha256": "af3c72580509fd7465b28414143a0b5e3f8b368b54240eb191cdf5a42afa8f98",
+      "provided_evidence_section_sha256": "bfdf3877c39108af9e29da58af3fd6ee2b8722f81f383b9d71e678c0b41f30ce",
+      "query_id": "V2Q010",
+      "review_item_id": "R035",
+      "review_payload_sha256": "4e8f0688c167e3b9c6e2bd5c27798b83d62dcc559854689a393c812731121a57",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "32ac51f2601ae6651bd544c800685755563cb0acafeac206c630918f24f40a4a",
+      "citation_payload_sha256": "843ded33928ea6e37cfae9afccfa41255093a334e502c9a08aa17897601f41df",
+      "provided_evidence_section_sha256": "471e4d48511bcc3060d8989ba51779b989d4d156bba23efa6ebad40262207738",
+      "query_id": "V2Q021",
+      "review_item_id": "R036",
+      "review_payload_sha256": "f7cac81caf8ebd3442a8be4191869926286205990876d7584ece8629d593214c",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "ecaaf48a3dedfe668c55e023162c4d9dd0db2b34d3a058a32f6f10c07db89478",
+      "citation_payload_sha256": "9f86e813352b96ad58b991eee1717df8569211701c777c43347bf57382835082",
+      "provided_evidence_section_sha256": "5f584f36d7ed50d9eccc9ac04de5355e5ef4250f9551c9e91705b1643f6b5314",
+      "query_id": "V2Q011",
+      "review_item_id": "R037",
+      "review_payload_sha256": "886ba055fbb093f748afb2dc30ed49f0ddc5ad1a2fe35fac4b247fa17e58da61",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "9334c0730a22c67336b3f3955d163225f1b3a7f4d8d3b01ec7beec8d268814df",
+      "citation_payload_sha256": "4f87b24f19ae6eff97af612498e5322ab6495f9dd3febff5f8be820dfe3bd8f3",
+      "provided_evidence_section_sha256": "344b0b8d782e5fbf29b7ada1178b59f343bf932e5bc4033193659781cccf78a8",
+      "query_id": "V2Q018",
+      "review_item_id": "R038",
+      "review_payload_sha256": "8bbbd36bfccb3ebcbd0e84110b2817d3c3b024e6d13a0c33b12e59279f3d2fbd",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "f4e71dcb5a5bfaa0f3a701eada10ee7540dc8d2cb1d472350c068c7d90966005",
+      "query_id": "V2Q048",
+      "review_item_id": "R039",
+      "review_payload_sha256": "3688cca06545077a70cd1f0063f82e8687b6cd0206bc4b5352362608bb4538a4",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "b2db4e9cfbe3df0db7470a55af936e0067a6194117e4f91a448e2d8271a07509",
+      "query_id": "V2Q058",
+      "review_item_id": "R040",
+      "review_payload_sha256": "ab90f0a7cf65cb27976903e1c241a00bd3ac59ccfebf2677fc798a89f299b501",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "4b8f2abb4f13a8b8aa97551193dc272edbce1fbf266f43c2f307d4153d702439",
+      "citation_payload_sha256": "eea0d42f98d37756f2a0a9381ebe9e927c03851cce8373b05865bf90063c5883",
+      "provided_evidence_section_sha256": "204648fa3fc1218d952b320fcdf209c11d8b19326bd8b0bcad222daafe63ca3c",
+      "query_id": "V2Q001",
+      "review_item_id": "R041",
+      "review_payload_sha256": "4396e9bde29dcaf31d5a4c3dbba29ea4dc0b8432638daccd050900edd470c85f",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "b13212cea899ba935cb0f2495de33131b1d1c74bb1fd023c86d1b6acb8355509",
+      "citation_payload_sha256": "47f2be58aa2a56a9f83c127e0394a24d67785a37af04f15134bb21de23c7b895",
+      "provided_evidence_section_sha256": "9840e348802db1b85a2db9db793b02e93a87ae192fccdfc9a55fd560e2a444f9",
+      "query_id": "V2Q023",
+      "review_item_id": "R042",
+      "review_payload_sha256": "51895c5b9adf10500ce0b9941d604f8f47d630d751d2e54506805837146a6d02",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "85acdfe1c99bc7b3bd6150b2da85289052064bd2eddf90cb13047cbd289ba0ee",
+      "citation_payload_sha256": "71323d6a837594145be2f0c2185e9f44f8eca34fd3a94e4ad97f6f871ae61323",
+      "provided_evidence_section_sha256": "2233644aed5f6a7b105e44c6b5d3ba7ee0cbc29621fe570c14ede9f1d957d4cb",
+      "query_id": "V2Q016",
+      "review_item_id": "R043",
+      "review_payload_sha256": "dbc392f3c5410359f6cab61be0b89f2289d6af5621734a0dc99da0f1f74ff1b2",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "66a9417837f1ebfbd8643470ba30a1bbacab04ea221c13a6e64a4f930bd2a393",
+      "citation_payload_sha256": "0551658e10047c91313bab32ce0791f77c22df6c6d58705d0ffc864deb544823",
+      "provided_evidence_section_sha256": "0f94da46e26e5839adcda61b8d7647cbbc96de87106d51f2d1b76680255008e3",
+      "query_id": "V2Q011",
+      "review_item_id": "R044",
+      "review_payload_sha256": "2f0632a9a845d0bbe40dcff533808051b645d60bde407b39c336e6fae087cc3d",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "3285f89c5b344d4070007fd5d8d5536c1c33e5d9389f8031cbd45f5d1e62b718",
+      "citation_payload_sha256": "fee18127fd8da3c4d0cabaafb3150cd3c7630e3851c16b95c7d1ce1dedc2a70e",
+      "provided_evidence_section_sha256": "b602ef1c0fbe6318c57adde9699c4689fad5d382c5249bd60cf6cdb71a7663a6",
+      "query_id": "V2Q073",
+      "review_item_id": "R045",
+      "review_payload_sha256": "46fe653efa79b47f2db4fa6a073565a042c703123bf614e3de37ca63ad174624",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "6b5038f2b0daa8ec21db861caed1b1dc73a8f5c0254c1da63f706919d639e0c0",
+      "citation_payload_sha256": "7728790c425ec09a3b8c6d2cce4b2ec35037b96ba7b02d065e1c9fd691b86ec0",
+      "provided_evidence_section_sha256": "1721e20ab2808809ef4dae91c8b7b7c14e3c4668d15aa293712776b34b02505f",
+      "query_id": "V2Q020",
+      "review_item_id": "R046",
+      "review_payload_sha256": "2607368d132476c2c0f57850b5549073ff80aa1dd555891f427af2a25c8cb1cd",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "9a82f871547d9660271c451986fd55e40634e37857a5d349b4eeba2d266f2f43",
+      "citation_payload_sha256": "4a3b2d33a5eb11ba666ee33b9f0bd09853cb1935b739c6c333f2f0f03aeb6bf4",
+      "provided_evidence_section_sha256": "5604939881ab9ac3336fcc0cad401a4c2f5505028f03197aca0e67eb35b7d626",
+      "query_id": "V2Q012",
+      "review_item_id": "R047",
+      "review_payload_sha256": "ab8a4570b79cc842615df21388e14b2d28297640008644892b7f5458afe44b1c",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "5660695426853d88adb1a9fe715f91c33f6ba3cf0631bea00ed9e6e927580507",
+      "citation_payload_sha256": "28caed1dee954a3a2d63166d5bf7ad72b12cdb41cc563b8bf02021fd0a205bab",
+      "provided_evidence_section_sha256": "f6918c7e012b07a973e2a6bdd17a98b27c7515942c988bc4010d686760b4d5d2",
+      "query_id": "V2Q004",
+      "review_item_id": "R048",
+      "review_payload_sha256": "fd67ff66438b144a17f6cfab0f23ba5ffb7eb410fbeec2f296323cc1759ac295",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "6296d3452c71826ca358887b136b1bd749c989aa6a94a10fa655ce4a387d7e74",
+      "query_id": "V2Q073",
+      "review_item_id": "R049",
+      "review_payload_sha256": "c2e8e3e50119f71044e51ed6ae9e3fbfa73c128f32c64fb86027477eccb99d4d",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "43625efe944569e983d96049d719c0e4e04d17cff8d7e8726457fc894168dbdf",
+      "citation_payload_sha256": "6bc8ed518371ad0c0931e003fda6e68a286427532ab50830ab0d6e496be6981c",
+      "provided_evidence_section_sha256": "e884d7e56fd19668b2a3a2f824d6da4b0e31bfba99a3e6eaee76bb76b28e1c37",
+      "query_id": "V2Q009",
+      "review_item_id": "R050",
+      "review_payload_sha256": "334d4ae4038a2f73e79a0651f3cca44927b1ef57c28f61f61cb45eb7bb5d0394",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "c5638e67761a063646a31fd87700a442cd7617a6c1ca5210d76a26434768725a",
+      "citation_payload_sha256": "817f8bde0467b2605ca6f4ded7ece8b3495b752c1041d622aea434a26f3f413d",
+      "provided_evidence_section_sha256": "a9a78a43f008ffebe498355eef12417f638e875f43eb9386bc4521a30fcf44cf",
+      "query_id": "V2Q007",
+      "review_item_id": "R051",
+      "review_payload_sha256": "aa7ed98237660b0882fe9731ea30b4a3c67f371f85bf1eade4adfb0dbff345ad",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "9d7cc11d43c18a552f0ce7519ea9af766cd9d17e2b53bd054f3596dc8e29be8f",
+      "citation_payload_sha256": "ba11e1b463a31b8e6ade801c34e4ccbb3cbecf38fb5fa68233890d718dac7c62",
+      "provided_evidence_section_sha256": "2158b47401aee9c88f74c03b4c4a1f93cc6faa57e1081ce59206022ed70ddf53",
+      "query_id": "V2Q001",
+      "review_item_id": "R052",
+      "review_payload_sha256": "89d383530b4ce6dd29ff8eb5d6af1aceee2437d30b8f3acada35e2f73b8452ef",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "834b19ca4bd103ea1816844d6e73314bf39e0351129187fc4edbcd39fd3ebc92",
+      "citation_payload_sha256": "0c6ed7341807166e2fc3436e8a42c8bb86bfac81de5b5625abdece93e7f2117d",
+      "provided_evidence_section_sha256": "58d71f89e04d32b372084b12fdc976ec555b35d0951bcbbf717692867a5055df",
+      "query_id": "V2Q015",
+      "review_item_id": "R053",
+      "review_payload_sha256": "302d02b5d7f6beabc1ffa8255494e7345339db0d0eedbc4cf97adc4054ffa82b",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "dfbeb0717bcf8ba9568b24e148bd352cafe3859292729df3c167908b9f5e5f10",
+      "citation_payload_sha256": "bd4cd348a552c860bea374092041d3ca540780f79601e6da22f84de811a80ecd",
+      "provided_evidence_section_sha256": "8433166d03bb59fe88807ad9aad0fb042a6fbc10d0f74c8e26a9662727bf9dc1",
+      "query_id": "V2Q006",
+      "review_item_id": "R054",
+      "review_payload_sha256": "ad7313020cb35adc8e7e4a6e5579fa069f57aaee4038b6c5b6b64bc57d63a4d0",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "5ad231509fb75c2da1e031426cec388dd0ce30ac64ccd7e786b5484e043e81e0",
+      "citation_payload_sha256": "5abaac6b3b40fe9e046f786ee152e2f3128337e495d1f2fa6af8e42b54cda419",
+      "provided_evidence_section_sha256": "575d3b1c48866152cef076f021599f2da5e552017834fd64d65cd2d69948628e",
+      "query_id": "V2Q017",
+      "review_item_id": "R055",
+      "review_payload_sha256": "3bffa3548dabdf81755e2eb5c3b8c47c206d5c6d3b914c4233d7e86d4998298b",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "004c70594569ca00e7cc09b4d8e8ccfbf573d8fa4e215e47f162386a4eae81f3",
+      "citation_payload_sha256": "5c3e22126b9a52c6fad601625d717842115b6920bad3b7e7f81cb4c23a2e4ae0",
+      "provided_evidence_section_sha256": "2db17fd4c8fac1c8e6a9901b4356cab8d73709ca2a82fa92665f72c0288180ab",
+      "query_id": "V2Q040",
+      "review_item_id": "R056",
+      "review_payload_sha256": "770e31d236ff16c6ef435b32e0e1410a6d029a7f4b7c16b420bb3e7ca323d02d",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "009d1cf7657faa1a2e983ae55ddfae3fed38183f6390df2911985f227cb91fb2",
+      "citation_payload_sha256": "8d3eb0962ab27753a259879a7287ff6798ca4c3f8dd7995dc5d6ea03fb65ada9",
+      "provided_evidence_section_sha256": "01b02428576feedc6cf9d87f7848d87393712307400e825e71ba68530be03032",
+      "query_id": "V2Q025",
+      "review_item_id": "R057",
+      "review_payload_sha256": "b3b4ec722606ae163beb8f35059a6ffda6dfb6a5edd014dba27df7f91e42ae14",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "1441f553393940c06754da3bb21eb2dbb616812fad0db75c027dfd56adfc71e8",
+      "query_id": "V2Q020",
+      "review_item_id": "R058",
+      "review_payload_sha256": "04dc1e10d6be038bc49583e10ed9918dc7b88a424dafbabe2e7cc293ee72e121",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "bea95e6a0fc753ae5628f269bf383ace1a3f26141ee820a3c88e67f87c1878ec",
+      "citation_payload_sha256": "af7db6a3e1a657ccb1800e8441835134b2db9f58c381a699bc435715b47fa2b7",
+      "provided_evidence_section_sha256": "88d28274993bac139d293a2ede9c24d2daa326db21e6d16db57bfc5790c0a362",
+      "query_id": "V2Q033",
+      "review_item_id": "R059",
+      "review_payload_sha256": "2db5adafc63470a9b8b8896aa917bcd071327832fcd2d12f4e53f9a00f0a490d",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "32f73cc687433289ad4e23a3e7df289c2c3dffb51decd00b73ee025654f173b3",
+      "citation_payload_sha256": "c38c49a66a4ddce1e891f329c469a5311737451ab132ea20f7f2b35f6635311d",
+      "provided_evidence_section_sha256": "4de9f48a52a1e9219f90c48d0a28cc5ab93912f04c8b9b8c53e87c51ba031620",
+      "query_id": "V2Q052",
+      "review_item_id": "R060",
+      "review_payload_sha256": "823daaf7b068104575e27727420152c7a9b94586ba7a039dcfc531dabf18927b",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "f15e2add5863efc3d5e9c087a275cedfd6d14c3198840877501ba5b56d91e33b",
+      "citation_payload_sha256": "1dbb38ae9b952ceb128315455bc123ac0d7f5f61a162a222dcde3cd6f7940c6e",
+      "provided_evidence_section_sha256": "f7019e399512a09db432247d67f72d9a1dac37947d6592010bd984b93f14aa8b",
+      "query_id": "V2Q013",
+      "review_item_id": "R061",
+      "review_payload_sha256": "a2f524b65467ae258612af6f8753ead486b1404dfd2acbd3fba2d4096610c7a2",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "ab879250134da11520f8ebb3beadb88fed118533a9a84deb5a576ba3254a369e",
+      "citation_payload_sha256": "b9646cf7aa9360adb58efa278afb4d9624221cab6e52a37c73ac3fafd8502b8f",
+      "provided_evidence_section_sha256": "567c7f41c80459488bd37dc7d7e2c19fa9d14404fdd1f00aa6f6672f2c8d7dcd",
+      "query_id": "V2Q024",
+      "review_item_id": "R062",
+      "review_payload_sha256": "9fd126e6df6a8aa1fb83b498ed898930ea9f883add4957e524d0987e8f39ef8d",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "92f3469e83e9d43eb534da1f7d04ef8c238b241618136d40872fccad7b462100",
+      "query_id": "V2Q059",
+      "review_item_id": "R063",
+      "review_payload_sha256": "66ed0b0db684969ebddb9539905a91539ce147c1f6a8ce5fd22465e22fe9908e",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "038748df7debadae353299574b72e44958091ddac849fc0b9b6b7be5e8b976df",
+      "query_id": "V2Q008",
+      "review_item_id": "R064",
+      "review_payload_sha256": "acf22d6d8051b2f3c5d7b76158bdab237939d6e35800758c5cafdcb45fa790bc",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "6f32bccbf52c907bde0c569d6191cab8dd57bd1533f0f1f8b02d157d6d484760",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "558544489ebe2102b394416e4e0a2e68c6c21ace90d7144eae15d455fc1c040f",
+      "query_id": "V2Q048",
+      "review_item_id": "R065",
+      "review_payload_sha256": "dd163a7ae3b59840eb2033a23a537c6c821c6f5f6159fb89d26e71e9c52578ed",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "3c105799bca6db70664e08f0ab7631beac3ef33daaeed926d890c99b44fc34e2",
+      "query_id": "V2Q019",
+      "review_item_id": "R066",
+      "review_payload_sha256": "e390c0346bf50091ed8e36c819034c468e8dc6d8f9bb11a9e933f78447546031",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "16fc19e6cb18667204801fed43b8a0b0a1e27826b6c3003fccb51ee55ae4c016",
+      "citation_payload_sha256": "97e8ae0110350469c108675b31d434083c13bd84502fcd70a0a6ac56f1fcdc18",
+      "provided_evidence_section_sha256": "1052a0c5b65ffe77b64d33e16e30a0ab7777b32ca65c002aa6d8f3f30c6e73fa",
+      "query_id": "V2Q033",
+      "review_item_id": "R067",
+      "review_payload_sha256": "dac2d8dc1b893f91dd315202d9a881f0bddbebe1fbee31b9e1fd432da63b280c",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "a0eba0aaa6169b5c78f1c1ef741911a85d617b9ac707dfab3807c7bf33eb3f04",
+      "query_id": "V2Q052",
+      "review_item_id": "R068",
+      "review_payload_sha256": "279397a5f70c303849ceaa276e32f6c78b35bd40e50474a64802b467ca2aedf9",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "45caeae56656c10b72cfb774b78a13c238f1eec52cc40bb7f4e8e3c03dfcfbd0",
+      "citation_payload_sha256": "aa9252109da5d8f6203b5e38e89de5be9c832dfb8040f1d153efbe9f7a9f3cae",
+      "provided_evidence_section_sha256": "aafd50a08d0a29891eb04d7009826ccc98d28129700b0b1b623dd6fb1e69a6f5",
+      "query_id": "V2Q008",
+      "review_item_id": "R069",
+      "review_payload_sha256": "5592699914512a07ab23554c8d6edc4260e1d1ba06ffad7a195346bee61d7ee1",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "eee455d1b72fb4da15dc52669b24972a7eab8f866c474251311afcbc4ea8113e",
+      "citation_payload_sha256": "a206915d337a7692b7a2101a3435bcc3fadcfc895175c85680f192ea61a86769",
+      "provided_evidence_section_sha256": "e2aa507b6f0695d880e512ca5738a0601521453da06bd790b5b5e0a3d55c1a7f",
+      "query_id": "V2Q023",
+      "review_item_id": "R070",
+      "review_payload_sha256": "5787cc0bc802a5f02ac38de0e0d823416c1af1ff391c3ddf3fe558ae38582774",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "e2402e0033429619c8f7b77896b82f2a018f490c7d2934584b1aad87a24af5a3",
+      "citation_payload_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "provided_evidence_section_sha256": "8e768cd0fc7eda44316fc9424d5f2230ba40bb64ddb7e070356a1a631573a667",
+      "query_id": "V2Q026",
+      "review_item_id": "R071",
+      "review_payload_sha256": "3adc7a9b96645b45643fc0185c3493558b1f170ed579812901bec4c810f4519b",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "57c72dee03560464ff787b6bb4e32afc38a00913ac79fce57e3f5088f790be58",
+      "citation_payload_sha256": "f8143a50f4d80201c349f905db2c30b9f0c9a4da176b6d59e2e61ec090c76f8f",
+      "provided_evidence_section_sha256": "c44f917d109f924e72a55d4d6f84534a8045b09eda6c50893325a4a43b7db68b",
+      "query_id": "V2Q009",
+      "review_item_id": "R072",
+      "review_payload_sha256": "e6c175905f130eecb40e5448692105ebd4b3c99caf850e91453a4993e5058e26",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "00f6f444b121a15e2a772a6adde7ab46290b87e4cff872afb8157fe9491f9535",
+      "citation_payload_sha256": "ff2ed17ae954df37e1653e0219e9a4aeeafe4ad78554a08253f4b3a9cdbe01fc",
+      "provided_evidence_section_sha256": "e8df25c4bc12aa92eb6954dab29494b9a1b79de36752a252b33deea1863893a2",
+      "query_id": "V2Q041",
+      "review_item_id": "R073",
+      "review_payload_sha256": "5c2a5174b362c0f36f6a638aeddd16c5e130fedd3779dd8bd635aac7e7e00708",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "0951b6c35b0eac4e9662cc9cb026d0acbbdb1cb9a6bd212577444d36fe2345ba",
+      "citation_payload_sha256": "97b17757a15c0ce2519fd3e1165e3b03c40944fcae043e5abd47d00e5d180555",
+      "provided_evidence_section_sha256": "130b2e583839d6a7e411cab650ef09837b09f637b97c7ae287aed48c6f188c4b",
+      "query_id": "V2Q017",
+      "review_item_id": "R074",
+      "review_payload_sha256": "57f1925b060386286d445fc060884805f95c13a7e76474f6a4c58b7228c53f0e",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "5b4f383553b98a591954923512d27dd1f419c0a579cb58097c1ac9a6cf975db7",
+      "citation_payload_sha256": "0bb0ea21046df44194c172ebeda0fbc9775eb8f5f45c3d5eb43b928a4dfecc15",
+      "provided_evidence_section_sha256": "8441a8eac73f6e3489cd6e1a663b2f357ec39b387c93804d7e65ab64204605ff",
+      "query_id": "V2Q026",
+      "review_item_id": "R075",
+      "review_payload_sha256": "6de64d111c10f385a6d4e9eb853aa09fe6e2d3c5a32d458dccb9f8b78f865b86",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "a1c34152e036230d96718d549b9f2628731657bc807686e33e40302aeaa83747",
+      "citation_payload_sha256": "79911809302fb1f193316967d435fd7464a8585d0e434575b0323fce05c3cca3",
+      "provided_evidence_section_sha256": "a88344d07af02c911bdc7f8f6ae5f7b681d0bcf58c3b014c17acc4e27636c2ea",
+      "query_id": "V2Q045",
+      "review_item_id": "R076",
+      "review_payload_sha256": "1975bc975cb709bd32b480c5fe999bb4894b60b5f920ee75099c17ce2867d638",
+      "track": "A"
+    },
+    {
+      "answer_sha256": "fade4f203b9345d4069b4ffdd8cbb3326e912befc56ed6f335356432a9665c47",
+      "citation_payload_sha256": "05b431e449cd27ec0a905f2f4b1393b4506d1dea0f1b686844ec8f519037e800",
+      "provided_evidence_section_sha256": "75c07e07b07f23711bff01521cb745316786dfabe5141319b621d27728d6c850",
+      "query_id": "V2Q022",
+      "review_item_id": "R077",
+      "review_payload_sha256": "165858ca059a093cb7c94a22a9be15d1233ae97d6ee555b46564fc3dba3b8ccc",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "565889ad08210fe4fd718322f3721712c310b9d337a2b87b2274a8eb3b0f72c6",
+      "citation_payload_sha256": "6b1822cf5d4e7699db088c35f5b03359b1d51e7fc4d4b50a518dfcc1c5e34431",
+      "provided_evidence_section_sha256": "54aaa8b7de04514fe37b781c3b85335080813a54cfe3f64240c824f7b1772e38",
+      "query_id": "V2Q028",
+      "review_item_id": "R078",
+      "review_payload_sha256": "df41c4e18b70ce3bafb08454176f922e7321e5d3763fab79df4e0c1f595ace51",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "fa95452f2829a1b1827f3f0c9afb1864037bb7229a0c852e81374c989d9c65a5",
+      "citation_payload_sha256": "24c996b938912823b6ecf21b699ede9ff5e9a9a359db228418ea6e460540bcf2",
+      "provided_evidence_section_sha256": "b877d17ba107548b4cac156cfdd93265488cc976369950d1f1ff1f0c5f2d8f83",
+      "query_id": "V2Q064",
+      "review_item_id": "R079",
+      "review_payload_sha256": "764947dd64e7991cd3b9f0af406706501cf5b9034a0924377517cfff9234c16a",
+      "track": "B-R"
+    },
+    {
+      "answer_sha256": "4a41460b321a6053ec2f121d7cdbde281dc2ed29099c019f0427b8dc817ef356",
+      "citation_payload_sha256": "1adb5b7d1e1778d45e2d2d77398167f4b0d59b8c48ac839a75658da43173279f",
+      "provided_evidence_section_sha256": "f018d8a0c52b1e5cd289b9ac67e2d23a1e934e13e02687b31e8db1afb1a9e5e7",
+      "query_id": "V2Q019",
+      "review_item_id": "R080",
+      "review_payload_sha256": "d8200dffba9d115ba8b13e376ab18934bea968d6a9a0306403fc7ac380f425d5",
+      "track": "B-R"
+    }
+  ],
+  "multi_hop": {
+    "A": {
+      "FAIL": 4,
+      "FULL": 2
+    },
+    "B-R": {
+      "FAIL": 1,
+      "FULL": 1,
+      "PARTIAL": 4
+    }
+  },
+  "paired_counts": {
+    "B_R_IMPROVED": 9,
+    "B_R_REGRESSED": 1,
+    "UNCHANGED": 30
+  },
+  "paired_matrix": {
+    "COMPLETE": {
+      "COMPLETE": 22,
+      "INCORRECT": 1,
+      "PARTIAL": 0
+    },
+    "INCORRECT": {
+      "COMPLETE": 3,
+      "INCORRECT": 2,
+      "PARTIAL": 3
+    },
+    "PARTIAL": {
+      "COMPLETE": 3,
+      "INCORRECT": 0,
+      "PARTIAL": 6
+    }
+  },
+  "poc_category_diagnostics": {
+    "cross_document": {
+      "A_all_gold_top10": 0,
+      "A_all_gold_top20": 0,
+      "A_complete_B_incomplete": 0,
+      "A_incomplete_B_complete": 1,
+      "B_all_missing_recovered": 1,
+      "B_queries_recovered_missing": 3,
+      "B_supplemental_tasks": 8,
+      "n": 8
+    },
+    "multi_hop": {
+      "A_all_gold_top10": 2,
+      "A_all_gold_top20": 2,
+      "A_complete_B_incomplete": 0,
+      "A_incomplete_B_complete": 2,
+      "B_all_missing_recovered": 0,
+      "B_queries_recovered_missing": 0,
+      "B_supplemental_tasks": 2,
+      "n": 6
+    }
+  },
+  "protected_hashes": {
+    "artifacts/evaluation_v2/f/summary.json": "26c5c24bd8c7a7086b3c0165d67f39dbdd2c08738da7e732837c14cb836001ea",
+    "artifacts/evaluation_v2/f/test_run.json": "98f54888ebfb7dfabc6ea478cb57fe2bdc90f230ccae9e7d0a29dbe6ba9d9a72",
+    "artifacts/evaluation_v2/g/HUMAN_WORKFLOW_REVIEW.md": "6134bdd1aba0355d5ed8b11770da100414ccce35c88673d249f3b6ffe1b3bfaf",
+    "artifacts/evaluation_v2/g/HUMAN_WORKFLOW_REVIEW_COMPLETED.md": "0d7e07c0e65301d8e3abf90737c8189800f8b522f43de1f629136cf219acef77",
+    "artifacts/evaluation_v2/g/V2_G3_REVIEW_SUMMARY.json": "4959228e3c3f541492aa7382d98f87e4a965f1cb6fffed04c94d492bc34fc2fb",
+    "artifacts/evaluation_v2/g/generation_run_summary.json": "785772b21986ae63a6ac81515ce9b4b9d1ee737e1080ea7e450d5ecdea4d5b7f",
+    "artifacts/evaluation_v2/g/reconstructed_document_metadata.json": "173217bf170fd48a942acf864cf632dfa070f4629a2f4461306384f963237c27",
+    "artifacts/evaluation_v2/g/review_item_mapping_private.json": "88540f2f99e63ceb016a5e2fda683c05e4c3583eea751a753f6488013d8f332d",
+    "artifacts/evaluation_v2/g/track_a_answers.jsonl": "7166240193e5f3cc149945bb2512470cea3b159c50a825724734f251a0b4af96",
+    "artifacts/evaluation_v2/g/track_a_frozen_contexts.json": "2e788cedad3f25649629ab9f637a2d8d6cff57211db813cabd72dbf666bf9244",
+    "artifacts/evaluation_v2/g/track_b_answers.jsonl": "a4f5bfd2423ef2f27d47ded2b05bab0b4bcb9cbaf5b9133a6e868f5c92d1bbdf",
+    "artifacts/evaluation_v2/g/track_b_retrieval_trace.jsonl": "d0fa13c34dc47a92f5ec710ea33c24d6cc2b54d2ae58a0f466ac238d892d4bce",
+    "backend/app/core/config.py": "db8715a2cb2f263f5e3d5790782c80acd499ab5567621222e4a94ed7e5c5d22b",
+    "backend/app/core/llm_client.py": "1145b35bfa63efc9f93cc9e56c7d9f8b2b469e8b4ac410684e025c09453fa294",
+    "backend/app/schemas/evidence.py": "70f78d27bd500a652fbfb67bcb90b0d1490ac06845793e95fd70af4f7b8fb82c",
+    "backend/app/schemas/research.py": "cde6f6c2f03be4c880db97440bd65069dee79df2510e2c0d67fafb9755d78c18",
+    "backend/app/services/generation/evidence_builder.py": "b3499d99fd9fd85919f6e8cda3d494e16e04bc60067032b53077dedb6bbab07b",
+    "backend/app/services/generation/grounded_answer_service.py": "97abe399e757302cb0711f9e728cbbd05a10f5195e37d1e2979b96794ff90859",
+    "backend/app/services/research/workflow.py": "157c453d16061f53b4ed2a18cf2289781319f6933415db2a8ef1642a341f92ce",
+    "backend/app/services/retrieval/fusion_ranker.py": "0f3083b8f5fb687d272212b4e12037a306c99b1f7366d3dbeb673263f6d70285",
+    "backend/app/services/retrieval/retrieval_service.py": "9ed2523c8264882f1b46d83859e9e86fdd0e691b587c0222465c137b80d819e6",
+    "backend/app/services/runtime/contracts.py": "f04d8cbb5e71f4729348b312f4879f3a7251cf2c7f0f04d4f23dff3aca1b9378",
+    "backend/app/services/runtime/runtime.py": "fd1a66f4069b280bbcfa55356a86c89933e743fa17b89018b7f2bc25d14626e2",
+    "backend/app/services/runtime/tools.py": "ce3adaeec78940fdd5cd726ec8a0ca460622a1b2bfb57db577810c0043e791e6",
+    "backend/scripts/smoke_v2_g_contract_fix.py": "9add43c5826e2e8c9ef2ac8a237134cfccfec1cb4bb15ca33dcece58dce29d3f",
+    "backend/scripts/v2_g_reconstructed_runtime.py": "406f1c2d0b844d0af199c648c1abec3b30548742970f53bf08ba12ce1dd8f6c7",
+    "backend/scripts/validate_v2_g_reconstructed_runtime.py": "beebe8b50987289604b66669efb9f2b9e08ce306e2b821f5bdea137525fd6a1f",
+    "benchmarks/real_research/v2/final_chunking_config.json": "008845cdc4c45d8921173138d8b8591fa06d85e44082a5d73627801be3887079",
+    "benchmarks/real_research/v2/final_dense_config.json": "8842ce493055ce775fdff46c3851420e6965d80959f01faf5c5d2da2a37b1f96",
+    "benchmarks/real_research/v2/final_fusion_config.json": "f1707c358cadd7ceb162119811976ecfa1ea57fe6f40588bbd7a55b479c24360",
+    "benchmarks/real_research/v2/final_reranker_config.json": "5c800c65a9cf9b5549d81023a9467e58a15b75389d482d1e04f5aba8c01e6870",
+    "benchmarks/real_research/v2/final_retrieval_manifest.json": "bc601f31786987de88a1a9b1851508960332371654bc9d3a81f0e4a8a4f94e7a",
+    "benchmarks/real_research/v2/queries_test.jsonl": "5b94e93eed901c3ef05df7a9d4efa4d14b9aef19fbdb160d83c314f15306c419",
+    "benchmarks/real_research/v2/v2_g_generation_config.json": "c8769ccd18be625b89bae794e753633736d1fe0e4bd6defe497661e70978d147",
+    "benchmarks/real_research/v2/v2_g_runtime_provenance.json": "f745940fd3dbdd94c1dbad5c806078c637ec89aff7eaeb12a969baa838bb0b5b",
+    "benchmarks/real_research/v2/v2_g_track_a_context_config.json": "0c0a190a5f816490e440f7f0dcbaf769450b633807947e0ef2613d2e64fadcd3",
+    "benchmarks/real_research/v2/v2_g_track_b_reconstructed_config.json": "a20018f36ab2904bdd8decb71e58d05be82c75daa42540e29c91ef00bbcff422",
+    "benchmarks/real_research/v2/v2_g_workflow_benchmark.json": "39b30aa7152b6d12aae82a2902a7baa731685de182499e2d505b329ab8493658"
+  },
+  "query_type_metrics": [
+    {
+      "COMPLETE": 7,
+      "INCORRECT": 0,
+      "PARTIAL": 1,
+      "answers_with_unsupported_claims": 0,
+      "citation_ALL": 8,
+      "citation_ALL_rate": 1.0,
+      "citation_NONE": 0,
+      "citation_PARTIAL": 0,
+      "complete_rate": 0.875,
+      "correctly_cited_complete": 7,
+      "correctly_cited_complete_rate": 0.875,
+      "evidence_INSUFFICIENT": 0,
+      "evidence_PARTIAL": 0,
+      "evidence_SUFFICIENT": 8,
+      "incorrect_rate": 0.0,
+      "interpretation": "LOW_SAMPLE_DESCRIPTIVE",
+      "n": 8,
+      "partial_rate": 0.125,
+      "query_type": "factual",
+      "track": "A",
+      "unsupported_claims": 0
+    },
+    {
+      "COMPLETE": 4,
+      "INCORRECT": 0,
+      "PARTIAL": 1,
+      "answers_with_unsupported_claims": 0,
+      "citation_ALL": 4,
+      "citation_ALL_rate": 0.8,
+      "citation_NONE": 1,
+      "citation_PARTIAL": 0,
+      "complete_rate": 0.8,
+      "correctly_cited_complete": 4,
+      "correctly_cited_complete_rate": 0.8,
+      "evidence_INSUFFICIENT": 1,
+      "evidence_PARTIAL": 0,
+      "evidence_SUFFICIENT": 4,
+      "incorrect_rate": 0.0,
+      "interpretation": "LOW_SAMPLE_DESCRIPTIVE",
+      "n": 5,
+      "partial_rate": 0.2,
+      "query_type": "exact_term",
+      "track": "A",
+      "unsupported_claims": 0
+    },
+    {
+      "COMPLETE": 6,
+      "INCORRECT": 2,
+      "PARTIAL": 0,
+      "answers_with_unsupported_claims": 0,
+      "citation_ALL": 6,
+      "citation_ALL_rate": 0.75,
+      "citation_NONE": 2,
+      "citation_PARTIAL": 0,
+      "complete_rate": 0.75,
+      "correctly_cited_complete": 6,
+      "correctly_cited_complete_rate": 0.75,
+      "evidence_INSUFFICIENT": 0,
+      "evidence_PARTIAL": 0,
+      "evidence_SUFFICIENT": 8,
+      "incorrect_rate": 0.25,
+      "interpretation": "LOW_SAMPLE_DESCRIPTIVE",
+      "n": 8,
+      "partial_rate": 0.0,
+      "query_type": "semantic",
+      "track": "A",
+      "unsupported_claims": 0
+    },
+    {
+      "COMPLETE": 4,
+      "INCORRECT": 0,
+      "PARTIAL": 1,
+      "answers_with_unsupported_claims": 0,
+      "citation_ALL": 4,
+      "citation_ALL_rate": 0.8,
+      "citation_NONE": 1,
+      "citation_PARTIAL": 0,
+      "complete_rate": 0.8,
+      "correctly_cited_complete": 4,
+      "correctly_cited_complete_rate": 0.8,
+      "evidence_INSUFFICIENT": 0,
+      "evidence_PARTIAL": 1,
+      "evidence_SUFFICIENT": 4,
+      "incorrect_rate": 0.0,
+      "interpretation": "LOW_SAMPLE_DESCRIPTIVE",
+      "n": 5,
+      "partial_rate": 0.2,
+      "query_type": "relational",
+      "track": "A",
+      "unsupported_claims": 0
+    },
+    {
+      "COMPLETE": 0,
+      "INCORRECT": 2,
+      "PARTIAL": 6,
+      "answers_with_unsupported_claims": 0,
+      "citation_ALL": 0,
+      "citation_ALL_rate": 0.0,
+      "citation_NONE": 8,
+      "citation_PARTIAL": 0,
+      "complete_rate": 0.0,
+      "correctly_cited_complete": 0,
+      "correctly_cited_complete_rate": 0.0,
+      "evidence_INSUFFICIENT": 0,
+      "evidence_PARTIAL": 6,
+      "evidence_SUFFICIENT": 2,
+      "incorrect_rate": 0.25,
+      "interpretation": "LOW_SAMPLE_DESCRIPTIVE",
+      "n": 8,
+      "partial_rate": 0.75,
+      "query_type": "cross_document",
+      "track": "A",
+      "unsupported_claims": 0
+    },
+    {
+      "COMPLETE": 2,
+      "INCORRECT": 4,
+      "PARTIAL": 0,
+      "answers_with_unsupported_claims": 0,
+      "citation_ALL": 2,
+      "citation_ALL_rate": 0.3333333333333333,
+      "citation_NONE": 4,
+      "citation_PARTIAL": 0,
+      "complete_rate": 0.3333333333333333,
+      "correctly_cited_complete": 2,
+      "correctly_cited_complete_rate": 0.3333333333333333,
+      "evidence_INSUFFICIENT": 0,
+      "evidence_PARTIAL": 0,
+      "evidence_SUFFICIENT": 6,
+      "incorrect_rate": 0.6666666666666666,
+      "interpretation": "LOW_SAMPLE_DESCRIPTIVE",
+      "n": 6,
+      "partial_rate": 0.0,
+      "query_type": "multi_hop",
+      "track": "A",
+      "unsupported_claims": 0
+    },
+    {
+      "COMPLETE": 8,
+      "INCORRECT": 0,
+      "PARTIAL": 0,
+      "answers_with_unsupported_claims": 0,
+      "citation_ALL": 8,
+      "citation_ALL_rate": 1.0,
+      "citation_NONE": 0,
+      "citation_PARTIAL": 0,
+      "complete_rate": 1.0,
+      "correctly_cited_complete": 8,
+      "correctly_cited_complete_rate": 1.0,
+      "evidence_INSUFFICIENT": 0,
+      "evidence_PARTIAL": 0,
+      "evidence_SUFFICIENT": 8,
+      "incorrect_rate": 0.0,
+      "interpretation": "LOW_SAMPLE_DESCRIPTIVE",
+      "n": 8,
+      "partial_rate": 0.0,
+      "query_type": "factual",
+      "track": "B-R",
+      "unsupported_claims": 0
+    },
+    {
+      "COMPLETE": 4,
+      "INCORRECT": 0,
+      "PARTIAL": 1,
+      "answers_with_unsupported_claims": 0,
+      "citation_ALL": 5,
+      "citation_ALL_rate": 1.0,
+      "citation_NONE": 0,
+      "citation_PARTIAL": 0,
+      "complete_rate": 0.8,
+      "correctly_cited_complete": 4,
+      "correctly_cited_complete_rate": 0.8,
+      "evidence_INSUFFICIENT": 1,
+      "evidence_PARTIAL": 0,
+      "evidence_SUFFICIENT": 4,
+      "incorrect_rate": 0.0,
+      "interpretation": "LOW_SAMPLE_DESCRIPTIVE",
+      "n": 5,
+      "partial_rate": 0.2,
+      "query_type": "exact_term",
+      "track": "B-R",
+      "unsupported_claims": 0
+    },
+    {
+      "COMPLETE": 7,
+      "INCORRECT": 1,
+      "PARTIAL": 0,
+      "answers_with_unsupported_claims": 0,
+      "citation_ALL": 7,
+      "citation_ALL_rate": 0.875,
+      "citation_NONE": 1,
+      "citation_PARTIAL": 0,
+      "complete_rate": 0.875,
+      "correctly_cited_complete": 7,
+      "correctly_cited_complete_rate": 0.875,
+      "evidence_INSUFFICIENT": 0,
+      "evidence_PARTIAL": 0,
+      "evidence_SUFFICIENT": 8,
+      "incorrect_rate": 0.125,
+      "interpretation": "LOW_SAMPLE_DESCRIPTIVE",
+      "n": 8,
+      "partial_rate": 0.0,
+      "query_type": "semantic",
+      "track": "B-R",
+      "unsupported_claims": 0
+    },
+    {
+      "COMPLETE": 4,
+      "INCORRECT": 1,
+      "PARTIAL": 0,
+      "answers_with_unsupported_claims": 1,
+      "citation_ALL": 4,
+      "citation_ALL_rate": 0.8,
+      "citation_NONE": 0,
+      "citation_PARTIAL": 1,
+      "complete_rate": 0.8,
+      "correctly_cited_complete": 4,
+      "correctly_cited_complete_rate": 0.8,
+      "evidence_INSUFFICIENT": 0,
+      "evidence_PARTIAL": 0,
+      "evidence_SUFFICIENT": 5,
+      "incorrect_rate": 0.2,
+      "interpretation": "LOW_SAMPLE_DESCRIPTIVE",
+      "n": 5,
+      "partial_rate": 0.0,
+      "query_type": "relational",
+      "track": "B-R",
+      "unsupported_claims": 2
+    },
+    {
+      "COMPLETE": 1,
+      "INCORRECT": 0,
+      "PARTIAL": 7,
+      "answers_with_unsupported_claims": 3,
+      "citation_ALL": 5,
+      "citation_ALL_rate": 0.625,
+      "citation_NONE": 0,
+      "citation_PARTIAL": 3,
+      "complete_rate": 0.125,
+      "correctly_cited_complete": 1,
+      "correctly_cited_complete_rate": 0.125,
+      "evidence_INSUFFICIENT": 0,
+      "evidence_PARTIAL": 2,
+      "evidence_SUFFICIENT": 6,
+      "incorrect_rate": 0.0,
+      "interpretation": "LOW_SAMPLE_DESCRIPTIVE",
+      "n": 8,
+      "partial_rate": 0.875,
+      "query_type": "cross_document",
+      "track": "B-R",
+      "unsupported_claims": 5
+    },
+    {
+      "COMPLETE": 4,
+      "INCORRECT": 1,
+      "PARTIAL": 1,
+      "answers_with_unsupported_claims": 0,
+      "citation_ALL": 5,
+      "citation_ALL_rate": 0.8333333333333334,
+      "citation_NONE": 1,
+      "citation_PARTIAL": 0,
+      "complete_rate": 0.6666666666666666,
+      "correctly_cited_complete": 4,
+      "correctly_cited_complete_rate": 0.6666666666666666,
+      "evidence_INSUFFICIENT": 0,
+      "evidence_PARTIAL": 0,
+      "evidence_SUFFICIENT": 6,
+      "incorrect_rate": 0.16666666666666666,
+      "interpretation": "LOW_SAMPLE_DESCRIPTIVE",
+      "n": 6,
+      "partial_rate": 0.16666666666666666,
+      "query_type": "multi_hop",
+      "track": "B-R",
+      "unsupported_claims": 0
+    }
+  ],
+  "recommended_next_phase": "GENERATION_SYNTHESIS_OPTIMIZATION",
+  "recovery": {
+    "ORCHESTRATION_RECOVERY_SUCCESS": 1,
+    "all_recovered_semantics": {
+      "COMPLETE": 1,
+      "INCORRECT": 0,
+      "PARTIAL": 1
+    },
+    "definition": "Before=Track A final Top10. Recovery=first acquisition of previously missing exact locator into admitted Evidence; initial and supplemental mutually exclusive. Global-only return coverage is separately recorded. B does not inherit A context.",
+    "global_returned_missing_units": 8,
+    "initially_missing_queries": 19,
+    "initially_missing_still_limited_queries": 17,
+    "missing_units_before": 32,
+    "previously_missing_still_missing": 27,
+    "queries_all_missing_recovered": 2,
+    "queries_still_retrieval_limited": 21,
+    "queries_with_recovery": 4,
+    "recovered_semantics": {
+      "COMPLETE": 1,
+      "INCORRECT": 0,
+      "PARTIAL": 3
+    },
+    "units_recovered_admitted": 5,
+    "units_recovered_initial": 4,
+    "units_recovered_supplemental": 1
+  },
+  "research_workflow_readiness": "PARTIAL",
+  "retrieval_ceiling": {
+    "ANSWERABLE_FROM_TOP10": 21,
+    "ANSWERABLE_FROM_TOP20": 1,
+    "NOT_ANSWERABLE_FROM_TOP20": 18
+  },
+  "retrieval_ceiling_rates": {
+    "ANSWERABLE_FROM_TOP10": 0.525,
+    "ANSWERABLE_FROM_TOP20": 0.025,
+    "NOT_ANSWERABLE_FROM_TOP20": 0.45
+  },
+  "review_method": "MODEL_ASSISTED_SEMANTIC_REVIEW",
+  "review_vs_gold_caveat": "Exact Gold is a required-locator bookkeeping proxy, not an exhaustive list of semantically equivalent evidence. Review sufficiency can be higher; primary failure categories follow requested exact-Gold priority and are not causal verdicts.",
+  "status": "COMPLETE",
+  "supplemental_groups": {
+    "NO_SUPPLEMENTAL": {
+      "causal_claim": false,
+      "metrics": {
+        "COMPLETE": 17,
+        "INCORRECT": 3,
+        "PARTIAL": 1,
+        "answers_with_unsupported_claims": 1,
+        "citation_ALL": 18,
+        "citation_NONE": 2,
+        "citation_PARTIAL": 1,
+        "complete_rate": 0.8095238095238095,
+        "correctly_cited_complete": 17,
+        "correctly_cited_complete_rate": 0.8095238095238095,
+        "evidence_INSUFFICIENT": 0,
+        "evidence_PARTIAL": 0,
+        "evidence_SUFFICIENT": 21,
+        "incorrect_rate": 0.14285714285714285,
+        "n": 21,
+        "partial_rate": 0.047619047619047616,
+        "unsupported_claims": 2
+      },
+      "paired": {
+        "B_R_IMPROVED": 4,
+        "B_R_REGRESSED": 1,
+        "UNCHANGED": 16
+      }
+    },
+    "SUPPLEMENTAL_USED": {
+      "causal_claim": false,
+      "metrics": {
+        "COMPLETE": 11,
+        "INCORRECT": 0,
+        "PARTIAL": 8,
+        "answers_with_unsupported_claims": 3,
+        "citation_ALL": 16,
+        "citation_NONE": 0,
+        "citation_PARTIAL": 3,
+        "complete_rate": 0.5789473684210527,
+        "correctly_cited_complete": 11,
+        "correctly_cited_complete_rate": 0.5789473684210527,
+        "evidence_INSUFFICIENT": 1,
+        "evidence_PARTIAL": 2,
+        "evidence_SUFFICIENT": 16,
+        "incorrect_rate": 0.0,
+        "n": 19,
+        "partial_rate": 0.42105263157894735,
+        "unsupported_claims": 5
+      },
+      "paired": {
+        "B_R_IMPROVED": 5,
+        "UNCHANGED": 14
+      }
+    }
+  },
+  "tests": {
+    "failed": 0,
+    "passed": 16,
+    "scope": "standard-library offline integrity only"
+  },
+  "top10_answerable_A_incomplete": 3,
+  "track_metrics": [
+    {
+      "COMPLETE": 23,
+      "INCORRECT": 8,
+      "PARTIAL": 9,
+      "answers_with_unsupported_claims": 0,
+      "citation_ALL": 24,
+      "citation_NONE": 16,
+      "citation_PARTIAL": 0,
+      "complete_rate": 0.575,
+      "correctly_cited_complete": 23,
+      "correctly_cited_complete_rate": 0.575,
+      "evidence_INSUFFICIENT": 1,
+      "evidence_PARTIAL": 7,
+      "evidence_SUFFICIENT": 32,
+      "incorrect_rate": 0.2,
+      "n": 40,
+      "partial_rate": 0.225,
+      "track": "A",
+      "unsupported_claims": 0
+    },
+    {
+      "COMPLETE": 28,
+      "INCORRECT": 3,
+      "PARTIAL": 9,
+      "answers_with_unsupported_claims": 4,
+      "citation_ALL": 34,
+      "citation_NONE": 2,
+      "citation_PARTIAL": 4,
+      "complete_rate": 0.7,
+      "correctly_cited_complete": 28,
+      "correctly_cited_complete_rate": 0.7,
+      "evidence_INSUFFICIENT": 1,
+      "evidence_PARTIAL": 2,
+      "evidence_SUFFICIENT": 37,
+      "incorrect_rate": 0.075,
+      "n": 40,
+      "partial_rate": 0.225,
+      "track": "B-R",
+      "unsupported_claims": 7
+    }
+  ],
+  "unsupported_claims": {
+    "A": [],
+    "B-R": [
+      {
+        "claim_review": "Claim review: 2 contradicted core claims — the answer assigns FDMA to the underwater segment and NOMA to the aerial/RF segment; the supplied evidence states the reverse: underwater USN→USV uses NOMA and RF USV→UAV uses FDMA.",
+        "count": 2,
+        "distinction": "CONTRADICTED_OR_MISCHARACTERIZED_AS_RECORDED; no new per-claim relabeling",
+        "query_id": "V2Q018",
+        "review_item_id": "R019"
+      },
+      {
+        "claim_review": "Claim review: 1 unsupported/contradicted claim — the answer says the Feng Wang objective is absent, while a supplied Document 12 chunk states latency-constrained computation with AP total-energy minimization.",
+        "count": 1,
+        "distinction": "CONTRADICTED_OR_MISCHARACTERIZED_AS_RECORDED; no new per-claim relabeling",
+        "query_id": "V2Q019",
+        "review_item_id": "R080"
+      },
+      {
+        "claim_review": "Claim review: 1 material mischaracterization — related-work direct/relay and TDMA/FDMA discussion is presented as Document 30’s own access scheme; the supplied study’s own scheme is hybrid NOMA/FDMA.",
+        "count": 1,
+        "distinction": "CONTRADICTED_OR_MISCHARACTERIZED_AS_RECORDED; no new per-claim relabeling",
+        "query_id": "V2Q059",
+        "review_item_id": "R024"
+      },
+      {
+        "claim_review": "Claim review: 3 material issues identified — (1) the statement that Document 21’s optimization objective is not explicit is contradicted by supplied evidence stating system-revenue maximization; (2) the statement that Document 21’s optimization variables are not described is contradicted by OBS selection/offloading ratio/transmission duration evidence; (3) “Document 13 / optimization_variables: not enough evidence” conflicts with supplied joint optimization of offloading, association, and caching.",
+        "count": 3,
+        "distinction": "CONTRADICTED_OR_MISCHARACTERIZED_AS_RECORDED; no new per-claim relabeling",
+        "query_id": "V2Q062",
+        "review_item_id": "R003"
+      }
+    ]
+  },
+  "unsupported_distinction": {
+    "R003": "3 contradictions / conflicts explicitly described",
+    "R019": "2 contradicted core claims explicitly described",
+    "R024": "1 material mischaracterization",
+    "R080": "1 mixed unsupported/contradicted claim; no forced split",
+    "frozen_total": 7,
+    "independent_human_review": false
+  },
+  "workflow_semantic_crosstab": {
+    "completed": {
+      "COMPLETE": 20,
+      "INCORRECT": 1,
+      "PARTIAL": 2
+    },
+    "failed": {
+      "COMPLETE": 0,
+      "INCORRECT": 2,
+      "PARTIAL": 0
+    },
+    "partial": {
+      "COMPLETE": 8,
+      "INCORRECT": 0,
+      "PARTIAL": 7
+    }
+  }
+}

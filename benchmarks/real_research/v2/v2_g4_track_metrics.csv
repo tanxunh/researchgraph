@@ -1,0 +1,3 @@
+track,n,COMPLETE,PARTIAL,INCORRECT,complete_rate,partial_rate,incorrect_rate,evidence_SUFFICIENT,evidence_PARTIAL,evidence_INSUFFICIENT,citation_ALL,citation_PARTIAL,citation_NONE,unsupported_claims,answers_with_unsupported_claims,correctly_cited_complete,correctly_cited_complete_rate
+A,40,23,9,8,0.575,0.225,0.2,32,7,1,24,0,16,0,0,23,0.575
+B-R,40,28,9,3,0.7,0.225,0.075,37,2,1,34,4,2,7,4,28,0.7

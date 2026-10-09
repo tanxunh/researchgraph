@@ -112,11 +112,22 @@ Evidence 可沿 **Document → Document Version → Chunk → Page / Section →
 
 不可变版本使旧引用在论文重新处理后仍可解析。当前 Citation validation 验证结构、引用关系和证据归属，**不等于完整的 semantic entailment verification**：引用存在，并不意味着原文完全支持整句话。
 
-## 混合检索
+## 混合检索：产品配置与冻结评估配置
 
-BM25 擅长词项匹配，Dense Retrieval 捕捉语义相似性，RRF 融合两者排名，避免对不同尺度的 score 直接求和。默认使用 CPU 上的 `BAAI/bge-small-zh-v1.5`，512 维；Reranker 默认关闭。
+BM25 匹配词项，Dense Retrieval 提供语义候选，RRF 融合排名，cross-encoder 对候选 Evidence 重排。**Frozen V2 evaluation configuration 不是当前 production default**；Quick Start 启动的是产品默认配置。
 
-Search 遵循排名检索契约：即使问题无意义，也可能返回 Top-K 候选。系统没有用未经校准的阈值制造“无结果”。Graph 保留条件检索架构，但默认关闭抽取，真实语料 Graph/Auto 验证尚未完成。
+| 参数 | 产品默认配置 | Frozen V2 evaluation configuration |
+|---|---|---|
+| Dense | BAAI/bge-small-zh-v1.5，512 维，CPU | BAAI/bge-m3，1024 维 |
+| Candidate depth | 产品当前配置 | BM25 200 + Dense 200 |
+| Fusion | RRF，k=60 | Weighted RRF，BM25=1.25 / Dense=1.0，k=20 |
+| Reranker | optional，默认 OFF | BAAI/bge-reranker-base |
+| Reranker input / output | 显式请求配置 | Top20 → Top10 |
+| Chunking | TextChunker | target_chars=700，overlap=100，page-contained |
+
+模型 revision、索引身份和冻结哈希见 [final retrieval manifest](benchmarks/real_research/v2/final_retrieval_manifest.json)。其 `PRODUCTION_DEFAULT=false`；只更换模型名称不足以复现 V2。
+
+Search 按相关性排名，不使用未经校准的 relevance threshold。Graph 保留条件检索架构，默认关闭抽取；真实语料 Graph/Auto 尚未验证。
 
 ## Grounded QA
 
@@ -278,48 +289,38 @@ npm run build
 
 <a id="evaluation"></a>
 
-## 实验与验证
+## V2 Frozen TEST
 
-### Evaluation Snapshot
+30 篇真实论文，35 DEV / 40 TEST。DEV 用于配置选择；retrieval stack was frozen before TEST；**TEST was evaluated once；no post-TEST retrieval tuning**。Evidence 指标按 Gold locator 计算，多 Gold 使用真正 Recall，不能用 Document Hit 替代。
 
-| 真实论文 | Pages | Chunks | Human-curated queries | Gold Evidence |
-|---:|---:|---:|---:|---:|
-| 19 PDFs | 274 | 2,298 | 30（英文） | 45 |
+| Route | R@10 | MRR@10 | CR@20 | CR@50 |
+|---|---:|---:|---:|---:|
+| BM25 | 39.58% | 0.2900 | 51.04% | 72.29% |
+| Dense | 42.92% | 0.3087 | 52.92% | 71.88% |
+| Hybrid | 46.25% | 0.2830 | 62.50% | 79.38% |
+| Final reranked | 59.17% | 0.3802 | — | — |
 
-覆盖 19/19 篇论文、38 个唯一 Gold Chunk。评估按 Evidence locator 命中计算，多 Gold 使用真正 Recall，不以命中文档代替证据召回。
+Final reranked：R@5 **45.83%**，Hit@5 **55.00%**。相对 Hybrid Top10，reranker recovered **6 Gold evidence units and lost 1**。CR 是重排输入前候选覆盖，不从最终 Top10 重新计算。**Cross-document TEST remains a severe limitation**；这些是固定小样本上的观察，不是统计泛化结论。
 
-- **排序收益**：Hybrid Recall@10 为 **48.33%**；加入 Reranker 后为 **54.44%**，MRR@10 为 **0.3637**。
-- **延迟代价**：CPU p50 从约 **0.57s → 7.48s**，候选召回不变，因此 Reranker 保留为可选、默认关闭。
+## End-to-End Research Workflow POC
 
-真实论文 Evidence retrieval 仍是重要瓶颈。以上仅为小规模固定集合的观察，不代表普遍优势或统计显著提升。
+Workflow runtime = **RECONSTRUCTED_EVALUATION_RUNTIME**，不是 historical production runtime。Review method = **MODEL_ASSISTED_SEMANTIC_REVIEW**，不是 independent human evaluation。
 
-<details>
-<summary>查看完整 Retrieval Benchmark</summary>
+| Track | Complete | Partial | Incorrect | Correctly cited complete |
+|---|---:|---:|---:|---:|
+| A — FROZEN_CONTEXT | 23/40 (57.50%) | 9/40 (22.50%) | 8/40 (20.00%) | 23/40 (57.50%) |
+| B-R — RECONSTRUCTED_RESEARCH_AGENT | 28/40 (70.00%) | 9/40 (22.50%) | 3/40 (7.50%) | 28/40 (70.00%) |
 
-| Method | Hit@5 | Recall@5 | Recall@10 | MRR@10 | Candidate Recall@20 |
-|---|---:|---:|---:|---:|---:|
-| BM25 | 36.67% | 31.67% | 38.33% | 0.2977 | 67.78% |
-| Dense ZH | 33.33% | 27.78% | 42.78% | 0.2189 | 47.78% |
-| Hybrid | 46.67% | 38.33% | 48.33% | 0.3250 | 57.22% |
-| Hybrid + Reranker | 50.00% | 44.44% | 54.44% | 0.3637 | 57.22% |
+Paired：**9 improved / 30 unchanged / 1 regressed**；A incomplete → B complete = 6，A complete → B incomplete = 1。B-R 的两个执行失败保留在 40 个任务分母中；执行 completed 不等于语义正确。
 
-Reranker 从同一 Top-20 候选重排至 Top-10。英文 embedding 实验提高候选覆盖，但部分最终排名指标退化，结论为 NO CLEAR WIN，生产默认不变。本组实验不包含真实语料 Graph/Auto 的测量结果，尚未开展进一步的融合诊断。
-
-</details>
-
-### Research Agent Pilot
-
-10 个任务中，7 个完成、3 个 fail-closed，完成率 **70%**。人工审核覆盖这 7 份可信报告中的 30 个 Claim–Evidence 单元：
-
-| 人工标签 | 数量 | 比例 |
+| Strict FULL | Track A | Track B-R |
 |---|---:|---:|
-| Supported | 25 / 30 | 83.33% |
-| Partially Supported | 5 / 30 | 16.67% |
-| Unsupported | 0 / 30 | 0% |
+| Cross-document | 0/8 | 1/8 |
+| Multi-hop | 2/6 | 1/6 |
 
-**该小规模 pilot 中 0% Unsupported，不代表系统幻觉率为 0。** Partial 不合并为 Supported；这些比例不是 Agent accuracy。统计包含 3 个 `fact_document_mismatch` 失败任务；结果对应固定评估版本。
+POC readiness 为 **PARTIAL**。不宣称 production readiness 或 reliable cross-document Research Agent；unsupported-count 为零不等于零幻觉率。
 
-产品已完成真实服务与人工浏览器链路验证；独立仓库验证记录为 254 项 Backend 测试、134 项前端测试通过，离线导入与构建通过。测试记录与模型质量指标分别对应各自的验证范围。公开查询集不含论文正文，复现实验需合法获取语料并建立自己的索引映射，详见[评估说明](docs/evaluation.md)。
+详见 [V2 评估方法与结果](docs/evaluation_v2.md)、[完整 POC 报告](docs/V2_POC_FINAL_REPORT.md)及[公开数据政策](docs/evaluation_data_policy.md)。V1 历史结果单独保留在 [历史评估](docs/evaluation.md)，不与 V2 不同语料/协议直接比较为算法提升。
 
 ## 技术栈
 
@@ -344,7 +345,7 @@ Reranker 从同一 Top-20 候选重排至 Top-10。英文 embedding 实验提高
 ## 当前限制
 
 - Research API 同步执行；索引 worker 为单节点、进程内执行。
-- 默认 BGE 偏中文，英文实验结果有取舍；真实论文召回仍有瓶颈。
+- 产品默认 BGE 偏中文；冻结 V2 评估使用 M3，真实跨文档证据召回仍有瓶颈。
 - Citation 验证不提供完整 semantic entailment 判断。
 - Reranker CPU 延迟较高，默认关闭。
 - Graph 抽取默认关闭，真实语料验证延期。

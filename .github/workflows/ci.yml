@@ -35,7 +35,7 @@ jobs:
         run: python -m pip check
 
       - name: Run backend tests
-        run: python -m pytest -p no:cacheprovider
+        run: python -m pytest -p no:cacheprovider -m "not evaluation_private"
 
       - name: Offline import smoke
         run: python tests/smoke_import.py

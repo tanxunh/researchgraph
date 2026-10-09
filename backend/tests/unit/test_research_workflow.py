@@ -494,7 +494,9 @@ async def test_comparison_rejection_has_exact_diagnostic(case,rule):
             else:data['comparison'][0]['status']='insufficient_evidence'
         return json.dumps(data)
     model.generate=invalid;s=service(model=model);r=await s.run(request())
-    assert r.status=='failed' and s.business_diagnostics[0].validation_rule==rule
+    assert r.status=='failed' and r.errors==['invalid_model_response']
+    assert any(e.event_type=='model_call' and e.error_code=='model_output_invalid' for e in s.runtime.context.trace)
+    assert r.report is None  # Rejected earlier by the covered-cell schema.
 
 
 @pytest.mark.asyncio
@@ -512,3 +514,29 @@ async def test_citation_diagnostic_and_missing_status_schema_failure_remain_dist
     model.generate=no_status;s=service(model=model);r=await s.run(request())
     assert r.status=='failed' and not s.business_diagnostics
     assert any(e.event_type=='model_call' and e.error_code=='model_output_invalid' for e in s.runtime.context.trace)
+
+
+def test_covered_schema_preserves_pairs_and_rejects_outside_cells():
+    from app.schemas.research import covered_synthesis_schema
+    schema=covered_synthesis_schema({(2,'method'),(7,'optimization_objective')})
+    valid={'summary':'Supported [C1]', 'comparison':[{'document_id':2,'field':'method','value':'method'}]}
+    schema.model_validate(valid)
+    for doc,field in [(2,'optimization_objective'),(7,'method'),(8,'method')]:
+        with pytest.raises(ValidationError):
+            schema.model_validate({**valid,'comparison':[{'document_id':doc,'field':field,'value':'invented'}]})
+    assert 'const' in json.dumps(schema.model_json_schema())
+
+@pytest.mark.asyncio
+async def test_asymmetric_covered_cells_system_abstention():
+    model=Model();s=service(rows=[candidate(2,'objective',2)],model=model)
+    result=await s.run(ResearchTaskRequest(question='Compare objectives',document_ids=[2,7],
+                                          requested_fields=['optimization_objective']))
+    assert result.status=='partial' and result.citations
+    cells={(c.document_id,c.field):c for c in result.report.comparison}
+    assert cells[2,'optimization_objective'].status=='supported'
+    assert cells[7,'optimization_objective'].status=='insufficient_evidence'
+    assert cells[7,'optimization_objective'].value=='not enough evidence'
+    packet=next(c for c in model.calls if c['operation']=='synthesize')
+    assert packet['input']['allowed_covered_cells']==[{'document_id':2,'field':'optimization_objective'}]
+    assert packet['input']['missing_requested_cells']==[{'document_id':7,'field':'optimization_objective'}]
+    assert s.last_state['current_step']=='validate_citations'

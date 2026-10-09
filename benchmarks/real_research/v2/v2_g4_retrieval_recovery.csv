@@ -1,0 +1,41 @@
+query_id,query_type,required_gold,ceiling,all_gold_top10,all_gold_top20,missing_before,missing_before_locators,recovered_admitted,recovered_locators,recovered_initial,recovered_supplemental,recovered_global_returned,all_missing_recovered,previously_missing_still_absent,all_required_still_missing,lost_initial_gold,all_required_admitted,total_calls,supplemental_calls,unique_subqueries,unique_returned_chunks,unique_admitted_chunks,unique_returned_documents,unique_admitted_documents
+V2Q001,factual,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,4,0,4,16,7,4,1
+V2Q002,factual,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,4,0,4,19,9,3,1
+V2Q003,factual,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,6,2,6,43,9,16,1
+V2Q004,factual,1,NOT_ANSWERABLE_FROM_TOP20,False,False,1,"[[15, 15, ""doc-15-chunk-5af7688fa459838ba9d634db""]]",0,[],0,0,0,False,1,1,[],False,4,0,4,25,6,9,1
+V2Q005,factual,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,4,0,4,20,9,7,1
+V2Q006,factual,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,1,"[[18, 18, ""doc-18-chunk-c6323cb228f78b4b5ed1ea91""]]",False,4,0,4,20,11,5,1
+V2Q007,exact_term,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,6,2,6,20,10,4,1
+V2Q008,exact_term,1,NOT_ANSWERABLE_FROM_TOP20,False,False,1,"[[22, 22, ""doc-22-chunk-fd000b18ca3142002a64a348""]]",0,[],0,0,0,False,1,1,[],False,5,1,5,20,6,6,1
+V2Q009,exact_term,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,4,0,4,15,7,2,1
+V2Q010,semantic,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,4,0,4,23,11,6,1
+V2Q011,semantic,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,5,1,5,17,9,3,1
+V2Q012,semantic,1,ANSWERABLE_FROM_TOP20,False,True,1,"[[14, 14, ""doc-14-chunk-ba8e82b0cd6892f061f6bc9d""]]",0,[],0,0,0,False,1,1,[],False,4,0,4,24,10,9,1
+V2Q013,semantic,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,4,0,4,19,11,3,1
+V2Q014,semantic,2,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,2,"[[24, 24, ""doc-24-chunk-2713dc1525875303ef9c1978""], [24, 24, ""doc-24-chunk-a2957975e5a4b9f1f342968a""]]",False,5,1,5,34,5,15,1
+V2Q015,relational,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,5,1,5,24,10,7,1
+V2Q016,relational,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,5,1,5,20,9,6,1
+V2Q017,relational,2,NOT_ANSWERABLE_FROM_TOP20,False,False,1,"[[9, 9, ""doc-9-chunk-55f4fc35c4dd4581bad0d03f""]]",0,[],0,0,0,False,1,1,[],False,4,0,4,18,9,5,1
+V2Q018,relational,2,NOT_ANSWERABLE_FROM_TOP20,False,False,2,"[[30, 30, ""doc-30-chunk-cc7014b8c4e02d81fee2722d""], [30, 30, ""doc-30-chunk-e9d755cb094ccba1fca4c9c4""]]",0,[],0,0,0,False,2,2,[],False,4,0,4,13,8,2,1
+V2Q019,cross_document,2,NOT_ANSWERABLE_FROM_TOP20,False,False,2,"[[3, 3, ""doc-3-chunk-3b7bb94ce3708eb321ecb260""], [12, 12, ""doc-12-chunk-0d9edb534aa32393f10a3d3b""]]",0,[],0,0,1,False,2,2,[],False,8,4,8,34,11,11,2
+V2Q020,cross_document,2,NOT_ANSWERABLE_FROM_TOP20,False,False,2,"[[22, 22, ""doc-22-chunk-fd000b18ca3142002a64a348""], [25, 25, ""doc-25-chunk-7fe39f2943b4cb7c4891657c""]]",1,"[[25, 25, ""doc-25-chunk-7fe39f2943b4cb7c4891657c""]]",1,0,1,False,1,1,[],False,8,4,8,21,9,7,2
+V2Q021,cross_document,2,NOT_ANSWERABLE_FROM_TOP20,False,False,2,"[[5, 5, ""doc-5-chunk-8d35a8bd5844984274d16d30""], [26, 26, ""doc-26-chunk-befb71f14e4dffcd630f7cd0""]]",0,[],0,0,0,False,2,2,[],False,8,4,8,30,9,10,2
+V2Q022,cross_document,3,NOT_ANSWERABLE_FROM_TOP20,False,False,3,"[[6, 6, ""doc-6-chunk-5286dc06b77bc7e8c8d5f61d""], [30, 30, ""doc-30-chunk-cc7014b8c4e02d81fee2722d""], [30, 30, ""doc-30-chunk-e9d755cb094ccba1fca4c9c4""]]",0,[],0,0,0,False,3,3,[],False,6,2,6,18,10,5,2
+V2Q023,multi_hop,2,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,4,0,4,15,9,1,1
+V2Q024,multi_hop,2,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,2,"[[7, 7, ""doc-7-chunk-79270ccd0d7f4a4bd60ef9ed""], [7, 7, ""doc-7-chunk-8f597524d11c5c6ee24934d5""]]",False,5,1,5,19,9,2,1
+V2Q025,multi_hop,3,NOT_ANSWERABLE_FROM_TOP20,False,False,2,"[[30, 30, ""doc-30-chunk-cc7014b8c4e02d81fee2722d""], [30, 30, ""doc-30-chunk-e9d755cb094ccba1fca4c9c4""]]",0,[],0,0,0,False,2,2,[],False,4,0,4,20,8,4,1
+V2Q026,multi_hop,2,NOT_ANSWERABLE_FROM_TOP20,False,False,1,"[[3, 3, ""doc-3-chunk-366aa896a5c364cd39e4d5d4""]]",0,[],0,0,0,False,1,1,[],False,4,0,4,16,9,1,1
+V2Q028,factual,2,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,5,1,5,29,11,9,1
+V2Q033,factual,1,NOT_ANSWERABLE_FROM_TOP20,False,False,1,"[[16, 16, ""doc-16-chunk-e907f6e24c182b7cb6d80fef""]]",0,[],0,0,0,False,1,1,[],False,4,0,4,17,8,4,1
+V2Q040,exact_term,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,4,0,4,28,14,7,1
+V2Q041,exact_term,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,4,0,4,20,5,7,1
+V2Q045,semantic,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,4,0,4,19,8,8,1
+V2Q048,semantic,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,1,"[[19, 19, ""doc-19-chunk-6216619f4d29c6feb1fcb7a8""]]",False,4,0,4,25,13,6,1
+V2Q052,semantic,1,ANSWERABLE_FROM_TOP10,True,True,0,[],0,[],0,0,0,False,0,0,[],True,4,0,4,13,9,3,1
+V2Q058,relational,1,NOT_ANSWERABLE_FROM_TOP20,False,False,1,"[[21, 21, ""doc-21-chunk-273428575177b672af455202""]]",1,"[[21, 21, ""doc-21-chunk-273428575177b672af455202""]]",1,0,1,True,0,0,[],True,5,1,5,19,5,6,1
+V2Q059,cross_document,4,NOT_ANSWERABLE_FROM_TOP20,False,False,4,"[[2, 2, ""doc-2-chunk-4ed43c902b7808f567fd2895""], [2, 2, ""doc-2-chunk-e6ac7fd1d9ff86ddc6f3dfe7""], [30, 30, ""doc-30-chunk-ad617470ef3e3d2642ccb972""], [30, 30, ""doc-30-chunk-cc7014b8c4e02d81fee2722d""]]",1,"[[2, 2, ""doc-2-chunk-4ed43c902b7808f567fd2895""]]",0,1,1,False,3,3,[],False,8,4,8,35,11,14,2
+V2Q060,cross_document,2,NOT_ANSWERABLE_FROM_TOP20,False,False,2,"[[8, 8, ""doc-8-chunk-bf43d8940fb579ace142900b""], [29, 29, ""doc-29-chunk-56d2ace975ff9dfd4473bc50""]]",0,[],0,0,1,False,2,2,[],False,8,4,8,30,8,10,2
+V2Q062,cross_document,3,NOT_ANSWERABLE_FROM_TOP20,False,False,2,"[[21, 21, ""doc-21-chunk-273428575177b672af455202""], [21, 21, ""doc-21-chunk-d41fcd70886d4b12614e3d70""]]",2,"[[21, 21, ""doc-21-chunk-273428575177b672af455202""], [21, 21, ""doc-21-chunk-d41fcd70886d4b12614e3d70""]]",2,0,2,True,0,0,[],True,6,2,6,25,13,7,2
+V2Q064,cross_document,2,NOT_ANSWERABLE_FROM_TOP20,False,False,2,"[[23, 23, ""doc-23-chunk-c27480be3fa974c255aaa984""], [26, 26, ""doc-26-chunk-02fcc435c7f1c8066ad74189""]]",0,[],0,0,0,False,2,2,[],False,7,3,7,27,7,8,2
+V2Q073,multi_hop,2,NOT_ANSWERABLE_FROM_TOP20,False,False,1,"[[10, 10, ""doc-10-chunk-d7b89647a6bbc2112f8325fe""]]",0,[],0,0,1,False,1,1,[],False,6,2,6,21,12,4,1
+V2Q075,multi_hop,2,NOT_ANSWERABLE_FROM_TOP20,False,False,1,"[[21, 21, ""doc-21-chunk-d41fcd70886d4b12614e3d70""]]",0,[],0,0,0,False,1,1,[],False,4,0,4,29,6,16,1
