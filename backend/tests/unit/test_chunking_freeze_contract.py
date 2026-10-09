@@ -15,13 +15,47 @@ if not CONFIG.exists():
 EXPECTED_SHA256='008845cdc4c45d8921173138d8b8591fa06d85e44082a5d73627801be3887079'
 
 
+def frozen_source_sha256(source: bytes, *, historical_endings: str) -> str:
+    """Reconstruct frozen source bytes without decoding or stripping the BOM.
+
+    The Windows freeze captured mixed endings in TextChunker (LF except its
+    final CRLF) and all-CRLF in hash_service. Git's Linux checkout uses LF.
+    Only newline representation is normalized; content, BOM and final-newline
+    presence remain part of the single original frozen hash contract.
+    """
+    lf = source.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    if historical_endings == "lf_with_final_crlf":
+        canonical = lf[:-1] + b"\r\n" if lf.endswith(b"\n") else lf
+    elif historical_endings == "crlf":
+        canonical = lf.replace(b"\n", b"\r\n")
+    else:
+        raise ValueError("Unknown frozen source newline representation")
+    return hashlib.sha256(canonical).hexdigest()
+
+
 def test_config_schema_hash_and_implementation_pinned():
     cfg=json.loads(CONFIG.read_text(encoding='utf-8'))
     validate_config(cfg)
     assert hashlib.sha256(CONFIG.read_bytes()).hexdigest()==EXPECTED_SHA256
     assert hashlib.sha256(PACKAGED_CONFIG.read_bytes()).hexdigest()==EXPECTED_SHA256
-    assert hashlib.sha256((ROOT/'backend/app/services/chunking/text_chunker.py').read_bytes()).hexdigest()==cfg['implementation_sha256']
-    assert hashlib.sha256((ROOT/cfg['identity_implementation']).read_bytes()).hexdigest()==cfg['identity_implementation_sha256']
+    contracts = [
+        (ROOT/'backend/app/services/chunking/text_chunker.py',
+         'implementation_sha256', 'lf_with_final_crlf'),
+        (ROOT/cfg['identity_implementation'],
+         'identity_implementation_sha256', 'crlf'),
+    ]
+    for path, key, endings in contracts:
+        source = path.read_bytes()
+        expected = cfg[key]
+        lf = source.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+        # Exercise Linux LF, Windows CRLF and the current checkout independently.
+        for checkout in (source, lf, lf.replace(b"\n", b"\r\n")):
+            assert frozen_source_sha256(checkout, historical_endings=endings) == expected
+        # Source-content drift and BOM changes must still fail the frozen check.
+        assert frozen_source_sha256(lf + b"# drift\n", historical_endings=endings) != expected
+        changed_bom = lf[3:] if lf.startswith(b"\xef\xbb\xbf") else b"\xef\xbb\xbf" + lf
+        assert frozen_source_sha256(changed_bom, historical_endings=endings) != expected
+        assert frozen_source_sha256(lf.rstrip(b"\n"), historical_endings=endings) != expected
 
 
 @pytest.mark.parametrize('key,value',[('target_chars',800),('overlap_chars',0),('page_contained',False),('cross_page',True),('sentence_boundary_aware',True),('chunk_count',3836),('TEST_VALIDATED',True),('PRODUCTION_DEFAULT',True)])
