@@ -1,6 +1,6 @@
 from __future__ import annotations
-from typing import Literal, TypedDict
-from pydantic import BaseModel, ConfigDict, Field, model_validator
+from typing import Literal, TypedDict, Union
+from pydantic import BaseModel, ConfigDict, Field, model_validator, create_model
 from app.schemas.evidence import Citation, Evidence
 
 ResearchField = Literal['research_problem','system_scenario','method','optimization_objective',
@@ -145,3 +145,19 @@ class ResearchState(TypedDict):
     citations: list[Citation]
     status: str
     errors: list[str]
+
+
+def covered_synthesis_schema(allowed_covered_cells: set[tuple[int, str]]):
+    """Constrain paired document/field identities, never their Cartesian product."""
+    if not allowed_covered_cells:
+        raise ValueError('Synthesis requires at least one covered cell')
+    variants = tuple(create_model(
+        f'CoveredCell_{document_id}_{field}',
+        __base__=ComparisonDraft,
+        document_id=(Literal[document_id], ...),
+        field=(Literal[field], ...),
+        status=(Literal['supported'], 'supported'),
+    ) for document_id, field in sorted(allowed_covered_cells))
+    item_type = variants[0] if len(variants) == 1 else Union[variants]
+    return create_model('CoveredSynthesisDraft', __base__=SynthesisDraft,
+        comparison=(list[item_type], Field(max_length=len(variants))))

@@ -1,0 +1,66 @@
+{
+  "benchmark_id": "real-research-v2",
+  "split_seed": 20260921,
+  "split_strategy": "fixed_stratified_near_paper_disjoint_with_cross_document_pair_isolation",
+  "frozen": true,
+  "dev_count": 35,
+  "test_count": 40,
+  "test_human_verified": 40,
+  "test_pending_human_review": 0,
+  "test_eligible_for_final_run": true,
+  "query_type_distribution": {
+    "all": {
+      "factual": 15,
+      "exact_term": 10,
+      "semantic": 15,
+      "relational": 10,
+      "cross_document": 15,
+      "multi_hop": 10
+    },
+    "dev": {
+      "factual": 7,
+      "exact_term": 5,
+      "semantic": 7,
+      "relational": 5,
+      "cross_document": 7,
+      "multi_hop": 4
+    },
+    "test": {
+      "factual": 8,
+      "exact_term": 5,
+      "semantic": 8,
+      "relational": 5,
+      "cross_document": 8,
+      "multi_hop": 6
+    }
+  },
+  "gold_evidence_count": 118,
+  "corpus_document_coverage": 30,
+  "files": {
+    "queries_draft.jsonl": "f98e69db9bff37a6656245911c12613d072fade5c70e0ea47d7a82b3e46dbf90",
+    "queries_dev.jsonl": "2977076711400a1ff41ee4886c48e9fdd8f68f4e8fd41e2e5a5bd96e537fc7b9",
+    "queries_test.jsonl": "5b94e93eed901c3ef05df7a9d4efa4d14b9aef19fbdb160d83c314f15306c419",
+    "corpus_manifest.json": "597f5c78d662774cadb7fa0fa15102b8b60ec27eb6d5bc429818d43ce308f465"
+  },
+  "integrity_notes": [
+    "Split membership is frozen before retrieval optimization.",
+    "Final TEST execution is blocked until every test query has human_verified=true.",
+    "The 26 migrated labels retain human status only after identical source SHA-256 and stable chunk digest validation.",
+    "DEV draft labels are provisional and may be human-corrected only as annotation correctness work, with changes logged."
+  ],
+  "annotation_revision": "test-gold-final-human-confirmation-2026-09-21",
+  "test_gold_frozen": true,
+  "dev_human_verified": 35,
+  "dev_pending_human_review": 0,
+  "dev_gold_frozen": true,
+  "dev_annotation_status": "HUMAN_REVIEWED_FROZEN",
+  "dev_human_decisions_received": 35,
+  "dev_rejected_invalid_query_count": 0,
+  "dev_rejected_query_ids": [],
+  "dev_replacement_pending_approval": false,
+  "dev_historical_rejected_query_ids": [
+    "V2Q069"
+  ],
+  "dev_provisional_sha256": "4ce75a1a5d25301c7a5dbbe97a80b59b06c862356175fb95cb2f686852cdc63b",
+  "dev_frozen_sha256": "2977076711400a1ff41ee4886c48e9fdd8f68f4e8fd41e2e5a5bd96e537fc7b9"
+}

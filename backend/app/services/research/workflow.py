@@ -10,7 +10,7 @@ from langgraph.graph import StateGraph, START, END
 from app.core.config import get_settings
 from app.core.llm_client import LLMClient, LLMClientError
 from app.schemas.research import (ResearchTaskRequest,ResearchState,ResearchPlan,FactBatch,
-    StructuredFact,EvidenceLocator,Coverage,CoverageCell,SynthesisDraft,ResearchReport,ResearchResponse,ComparisonItem,BusinessValidationDiagnostic)
+    StructuredFact,EvidenceLocator,Coverage,CoverageCell,SynthesisDraft,ResearchReport,ResearchResponse,ComparisonItem,BusinessValidationDiagnostic,covered_synthesis_schema)
 from app.services.runtime.contracts import AgentRuntimeError, ExecutionBudget
 from app.services.runtime.runtime import AgentRuntime
 from app.services.runtime.tools import ToolRegistry, SearchInput, ResolveInput
@@ -251,13 +251,16 @@ class ResearchService:
         final=[all_evidence[key].model_copy(update={'evidence_id':f'C{i}'}) for i,key in enumerate(used,1)]
         self.final_evidence=final
         handles={locator(e).key:e.evidence_id for e in final}
+        allowed_covered_cells={(c.document_id,c.field) for c in s['coverage_status'].covered}
         if not supported_facts:
             report=ResearchReport(summary='not enough evidence',comparison=[],limitations=['not enough evidence'])
         else:
-            data=await self.structured(SynthesisDraft,'synthesize',{'question':s['question'],
+            data=await self.structured(covered_synthesis_schema(allowed_covered_cells),'synthesize',{'question':s['question'],
+                'allowed_covered_cells':[{'document_id':d,'field':f} for d,f in sorted(allowed_covered_cells)],
+                'missing_requested_cells':[c.model_dump() for c in s['coverage_status'].missing],
                 'facts':[{**f.model_dump(),'citation_ids':[handles[k] for k in f.supporting_evidence_ids]} for f in supported_facts],
                 'evidence':[e.context() for e in final],
-                'rules':'Use ONLY these grounded facts and evidence. Main claims in summary and limitations must cite [C#]. Comparison values contain content only, without citation markers; the system attaches citations from each cell\'s validated Fact supports. One supported comparison item per document/field. No additional fields or documents; no external facts. Explicitly state evidence limitations.'})
+                'rules':'Use ONLY these grounded facts and evidence. Main claims in summary and limitations must cite [C#]. Comparison values contain content only, without citation markers; the system attaches citations from each cell\'s validated Fact supports. Exactly one supported comparison item per allowed_covered_cells entry. Do not output missing_requested_cells: the system inserts insufficient_evidence for them. No additional fields or documents; no external facts. Explicitly state evidence limitations.'})
             supported={(c.document_id,c.field) for c in s['coverage_status'].covered}
             actual={(c.document_id,c.field) for c in data.comparison}
             if actual!=supported:

@@ -1,0 +1,13 @@
+track,query_id,answer_correctness,citation_correctness,unsupported_claims,required_documents,cited_documents,all_documents_used,all_required_gold_available,poc_result,low_sample,all_gold_top10,all_gold_hybrid20,supplemental_calls,recovered_missing_gold,all_missing_gold_recovered,A_incomplete_B_complete,A_complete_B_incomplete
+A,V2Q023,COMPLETE,ALL,0,[5],[5],True,True,FULL,LOW_SAMPLE_DESCRIPTIVE,True,True,0,0,False,False,False
+A,V2Q024,COMPLETE,ALL,0,[7],[7],True,True,FULL,LOW_SAMPLE_DESCRIPTIVE,True,True,1,0,False,False,False
+A,V2Q025,INCORRECT,NONE,0,[30],[],False,False,FAIL,LOW_SAMPLE_DESCRIPTIVE,False,False,0,0,False,True,False
+A,V2Q026,INCORRECT,NONE,0,[3],[],False,False,FAIL,LOW_SAMPLE_DESCRIPTIVE,False,False,0,0,False,False,False
+A,V2Q073,INCORRECT,NONE,0,[10],[],False,False,FAIL,LOW_SAMPLE_DESCRIPTIVE,False,False,2,0,False,True,False
+A,V2Q075,INCORRECT,NONE,0,[21],[],False,False,FAIL,LOW_SAMPLE_DESCRIPTIVE,False,False,0,0,False,False,False
+B-R,V2Q023,COMPLETE,ALL,0,[5],[5],True,True,FULL,LOW_SAMPLE_DESCRIPTIVE,True,True,0,0,False,False,False
+B-R,V2Q024,COMPLETE,ALL,0,[7],[7],True,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,True,True,1,0,False,False,False
+B-R,V2Q025,COMPLETE,ALL,0,[30],[30],True,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,0,0,False,True,False
+B-R,V2Q026,PARTIAL,ALL,0,[3],[3],True,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,0,0,False,False,False
+B-R,V2Q073,COMPLETE,ALL,0,[10],[10],True,False,PARTIAL,LOW_SAMPLE_DESCRIPTIVE,False,False,2,0,False,True,False
+B-R,V2Q075,INCORRECT,NONE,0,[21],[],False,False,FAIL,LOW_SAMPLE_DESCRIPTIVE,False,False,0,0,False,False,False

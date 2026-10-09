@@ -1,3 +1,5 @@
+> Historical V1 evaluation. Current release results: [V2 evaluation](evaluation_v2.md). Different corpora/protocols are not a controlled V1-to-V2 comparison.
+
 # Frozen evaluation
 
 See the [complete frozen tables](../README.md#evaluation).

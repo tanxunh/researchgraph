@@ -15,7 +15,7 @@ for path in (BACKEND_ROOT.parent, BACKEND_ROOT):
     if str(path) not in sys.path:
         sys.path.insert(0, str(path))
 
-os.environ.update({
+TEST_ENVIRONMENT = {
     "APP_ENV": "test",
     "DATABASE_URL": "sqlite://",
     "EMBEDDING_PROVIDER": "fake",
@@ -29,14 +29,30 @@ os.environ.update({
     "ANONYMIZED_TELEMETRY": "FALSE",
     "LLM_API_KEY": "",
     "LLM_BASE_URL": "http://127.0.0.1:1/v1",
-})
+}
+os.environ.update(TEST_ENVIRONMENT)
 
 
 @pytest.fixture(autouse=True)
-def isolated_settings():
+def isolated_settings(monkeypatch):
     # Restore isolation after tests that mutate the cached Settings object.
     from app.core.config import get_settings
 
+    # Evaluation runner imports may mutate os.environ during collection.
+    # Reestablish the mock-only test contract before every test.
+    for key, value in TEST_ENVIRONMENT.items():
+        monkeypatch.setenv(key, value)
     get_settings.cache_clear()
     yield
     get_settings.cache_clear()
+
+
+PRIVATE_EVALUATION_MODULES = ('integration/test_chunking_freeze_corpus.py', 'integration/test_final_retrieval_artifacts.py', 'integration/test_fusion_optimization_artifacts.py', 'integration/test_reranker_optimization_artifacts.py', 'unit/test_v2_g4_integrity.py')
+
+def pytest_collection_modifyitems(items):
+    """Artifact checks are opt-in; ordinary CI must not need private papers."""
+    tests_root = Path(__file__).resolve().parent
+    for item in items:
+        relative = Path(item.path).relative_to(tests_root).as_posix()
+        if relative in PRIVATE_EVALUATION_MODULES:
+            item.add_marker(pytest.mark.evaluation_private)

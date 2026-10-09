@@ -1,0 +1,94 @@
+{
+  "denominator": 40,
+  "interpretation": "count/rate are marginal stage diagnostics and may be non-monotonic because exact Gold is a proxy, not all semantically sufficient Evidence; cumulative_count/rate are nested intersections, not to be conflated.",
+  "tracks": {
+    "A": [
+      {
+        "count": 40,
+        "cumulative_count": 40,
+        "cumulative_rate": 1.0,
+        "rate": 1.0,
+        "stage": "tasks"
+      },
+      {
+        "count": 22,
+        "cumulative_count": 22,
+        "cumulative_rate": 0.55,
+        "rate": 0.55,
+        "stage": "all_gold_hybrid20"
+      },
+      {
+        "count": 21,
+        "cumulative_count": 21,
+        "cumulative_rate": 0.525,
+        "rate": 0.525,
+        "stage": "all_gold_final10"
+      },
+      {
+        "count": 32,
+        "cumulative_count": 21,
+        "cumulative_rate": 0.525,
+        "rate": 0.8,
+        "stage": "review_evidence_sufficient"
+      },
+      {
+        "count": 23,
+        "cumulative_count": 18,
+        "cumulative_rate": 0.45,
+        "rate": 0.575,
+        "stage": "semantic_complete"
+      },
+      {
+        "count": 23,
+        "cumulative_count": 18,
+        "cumulative_rate": 0.45,
+        "rate": 0.575,
+        "stage": "correctly_cited_complete"
+      }
+    ],
+    "B-R": [
+      {
+        "count": 40,
+        "cumulative_count": 40,
+        "cumulative_rate": 1.0,
+        "rate": 1.0,
+        "stage": "tasks"
+      },
+      {
+        "count": 38,
+        "cumulative_count": 38,
+        "cumulative_rate": 0.95,
+        "rate": 0.95,
+        "stage": "execution_succeeded"
+      },
+      {
+        "count": 19,
+        "cumulative_count": 19,
+        "cumulative_rate": 0.475,
+        "rate": 0.475,
+        "stage": "all_gold_admitted_after_agent"
+      },
+      {
+        "count": 37,
+        "cumulative_count": 19,
+        "cumulative_rate": 0.475,
+        "rate": 0.925,
+        "stage": "review_evidence_sufficient"
+      },
+      {
+        "count": 28,
+        "cumulative_count": 18,
+        "cumulative_rate": 0.45,
+        "rate": 0.7,
+        "stage": "semantic_complete"
+      },
+      {
+        "count": 28,
+        "cumulative_count": 18,
+        "cumulative_rate": 0.45,
+        "rate": 0.7,
+        "stage": "correctly_cited_complete"
+      }
+    ]
+  }
+}

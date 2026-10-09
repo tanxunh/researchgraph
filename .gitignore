@@ -74,7 +74,8 @@ backend/tests/fixtures/hard_eval/resolved_cases.jsonl
 /benchmarks/real_reasearch/papers/*.[pP][dD][fF]
 
 # Local execution captures may contain paper snippets and machine paths.
-/artifacts/
+/artifacts/*
+!/artifacts/evaluation_v2/
 **/traces/
 *.trace.json
 *.har
@@ -123,3 +124,67 @@ huggingface/
 /docs/FILES_TO_STAGE.txt
 /docs/PUBLIC_REPOSITORY_AUDIT.md
 /docs/EXPORT_SOURCE_MANIFEST.json
+
+# Public V2 release: only curated aggregate outputs are publishable here.
+/artifacts/evaluation_v2/*
+!/artifacts/evaluation_v2/g/
+/artifacts/evaluation_v2/g/*
+!/artifacts/evaluation_v2/g/final_summary.json
+!/artifacts/evaluation_v2/g/workflow_funnel.json
+!/artifacts/evaluation_v2/g/poc_closeout.json
+
+# Additional local caches, credentials and volume directories.
+.cache/
+.huggingface/
+hf_cache/
+.hf_cache/
+.tox/
+.nox/
+.python-version.local
+env/
+ENV/
+.envrc
+.aws/
+.azure/
+credentials.json
+service-account*.json
+id_rsa
+id_ed25519
+*.p12
+*.pfx
+volumes/
+docker-volumes/
+*.rdb
+*.aof
+*.log.*
+*.tmp
+*.swp
+
+# V2 benchmark publication boundary: no verbatim Gold or raw evaluation data.
+/benchmarks/real_research/v2/*
+!/benchmarks/real_research/v2/final_chunking_config.json
+!/benchmarks/real_research/v2/final_chunking_config.sha256
+!/benchmarks/real_research/v2/final_dense_config.json
+!/benchmarks/real_research/v2/final_fusion_config.json
+!/benchmarks/real_research/v2/final_fusion_config.sha256
+!/benchmarks/real_research/v2/final_reranker_config.json
+!/benchmarks/real_research/v2/final_reranker_config.sha256
+!/benchmarks/real_research/v2/final_retrieval_manifest.json
+!/benchmarks/real_research/v2/final_retrieval_manifest.sha256
+!/benchmarks/real_research/v2/queries_dev.jsonl
+!/benchmarks/real_research/v2/queries_test.jsonl
+!/benchmarks/real_research/v2/split_manifest.json
+!/benchmarks/real_research/v2/corpus_manifest.json
+!/benchmarks/real_research/v2/document_manifest.json
+!/benchmarks/real_research/v2/v2_g_workflow_benchmark.json
+!/benchmarks/real_research/v2/v2_g_workflow_benchmark.sha256
+!/benchmarks/real_research/v2/v2_f_test_error_analysis.csv
+!/benchmarks/real_research/v2/v2_f_test_metrics.csv
+!/benchmarks/real_research/v2/v2_f_test_query_types.csv
+!/benchmarks/real_research/v2/v2_g4_cross_paper.csv
+!/benchmarks/real_research/v2/v2_g4_failure_attribution.csv
+!/benchmarks/real_research/v2/v2_g4_multi_hop.csv
+!/benchmarks/real_research/v2/v2_g4_paired_comparison.csv
+!/benchmarks/real_research/v2/v2_g4_query_type_metrics.csv
+!/benchmarks/real_research/v2/v2_g4_retrieval_recovery.csv
+!/benchmarks/real_research/v2/v2_g4_track_metrics.csv
